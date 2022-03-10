@@ -343,7 +343,7 @@ def train(net, dataloader, device, epochs=1, lr=0.01, momentum=0.9, decay=0.0, v
   return losses_per_epoch
 
 
-  def accuracy(net, dataloader):
+def accuracy(net, dataloader):
     '''
     Given a trained neural network and a dataloader, computes the accuracy.
     Arguments:
