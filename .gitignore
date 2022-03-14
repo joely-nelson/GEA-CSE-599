@@ -3,3 +3,4 @@ data/*.csv
 *.bin 
 .ipynb_checkpoints
 cached_*
+optimizer.pt
