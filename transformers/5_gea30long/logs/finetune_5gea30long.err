@@ -3290,3 +3290,6 @@ Consider using one of the following signatures instead:
   warnings.warn("To get the last learning rate computed by the scheduler, "
 
 Iteration:  42%|████▏     | 97/233 [8:04:01<21:41:46, 574.31s/it][A
+Iteration:  42%|████▏     | 98/233 [8:06:36<16:49:01, 448.46s/it][A
+Iteration:  42%|████▏     | 99/233 [8:09:13<13:26:51, 361.28s/it][A
+Iteration:  43%|████▎     | 100/233 [8:11:55<11:08:05, 301.40s/it][A
