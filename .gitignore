@@ -2,3 +2,4 @@ data/*.csv
 *.zip
 *.bin 
 .ipynb_checkpoints
+cached_*
