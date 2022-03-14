@@ -33,6 +33,30 @@ if _has_sklearn:
     def simple_accuracy(preds, labels):
         return (preds == labels).mean()
 
+    # MOD add top10 metric
+    def top10_accuracy(labels, probs):
+        """
+        Calculate top 10 accuracy (lab of origin within the 10 most likely classes)
+        From: https://www.drivendata.co/blog/genetic-attribution-benchmark/
+        """
+        # get the indices for top 10 predictions for each row; these are the last ten in each row
+        # Note: We use argpartition, which is O(n), vs argsort, which uses the quicksort algorithm 
+        # by default and is O(n^2) in the worst case. We can do this because we only need the top ten
+        # partitioned, not in sorted order.
+        top10_idx = np.argpartition(probs, -10, axis=1)[:, -10:]
+    
+        # index into the classes list using the top ten indices to get the class names
+        # top10_preds = estimator.classes_[top10_idx]
+        # here the classes are labeled using integers so they should match
+        top10_preds = top10_idx
+
+        # check if y-true is in top 10 for each set of predictions
+        mask = top10_preds == labels.reshape((labels.size, 1))
+        
+        # take the mean
+        top_10_accuracy = mask.any(axis=1).mean()
+        return top_10_accuracy
+
     def acc_and_f1(preds, labels):
         acc = simple_accuracy(preds, labels)
         f1 = f1_score(y_true=labels, y_pred=preds)
@@ -86,6 +110,26 @@ if _has_sklearn:
             "recall": recall,
         }
 
+    # MOD, add top10 accuracy score
+    def acc_f1_mcc_auc_pre_rec_top10(preds, labels, probs):
+        acc = simple_accuracy(preds, labels)
+        precision = precision_score(y_true=labels, y_pred=preds, average="macro")
+        recall = recall_score(y_true=labels, y_pred=preds, average="macro")
+        f1 = f1_score(y_true=labels, y_pred=preds, average="macro")
+        mcc = matthews_corrcoef(labels, preds)
+        auc = roc_auc_score(labels, probs, average="macro", multi_class="ovo")
+        top10acc = top10_accuracy(labels, probs)
+        return {
+            "acc": acc,
+            "top10acc": top10acc,
+            "f1": f1,
+            "mcc": mcc,
+            "auc": auc,
+            "precision": precision,
+            "recall": recall,
+            "top10acc": top10acc,
+        }
+
     def pearson_and_spearman(preds, labels):
         pearson_corr = pearsonr(preds, labels)[0]
         spearman_corr = spearmanr(preds, labels)[0]
@@ -108,6 +152,12 @@ if _has_sklearn:
             # return {"acc": simple_accuracy(preds, labels)}
         elif task_name == "dnasplice":
             return acc_f1_mcc_auc_pre_rec(preds, labels, probs)
+        # MOD, include specific task and top10 accuracy
+        elif task_name == "dnagea30":
+            return acc_f1_mcc_auc_pre_rec_top10(preds, labels, probs)
+        # MOD, include specific task and top10 accuracy
+        elif task_name == "dnageaall":
+            return acc_f1_mcc_auc_pre_rec_top10(preds, labels, probs)
         elif task_name == "mrpc":
             return acc_and_f1(preds, labels)
         elif task_name == "sts-b":

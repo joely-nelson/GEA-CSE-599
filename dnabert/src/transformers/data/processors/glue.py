@@ -593,6 +593,59 @@ class WnliProcessor(DataProcessor):
         return examples
 
 
+
+class DnaGEA30Processor(DataProcessor):
+    """Processor for Genetic Engineering Attribution dataset with 30 labels (0-29)"""
+
+    def get_labels(self):
+        # based off the DnaPromProcessor, only change this string
+        return [str(lab) for lab in range(0,30)]
+
+    def get_train_examples(self, data_dir):
+        logger.info("LOOKING AT {}".format(os.path.join(data_dir, "train.tsv")))
+        return self._create_examples(self._read_tsv(os.path.join(data_dir, "train.tsv")), "train")
+
+    def get_dev_examples(self, data_dir):
+        return self._create_examples(self._read_tsv(os.path.join(data_dir, "dev.tsv")), "dev")
+
+    def _create_examples(self, lines, set_type):
+        """Creates examples for the training and dev sets."""
+        examples = []
+        for (i, line) in enumerate(lines):
+            if i == 0:
+                continue
+            guid = "%s-%s" % (set_type, i)
+            text_a = line[0]
+            label = line[1]
+            examples.append(InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
+        return examples
+
+class DnaGEAallProcessor(DataProcessor):
+    """Processor for Genetic Engineering Attribution dataset with 1313 labels (0-1312)"""
+
+    def get_labels(self):
+        # based off the DnaPromProcessor, only change this string
+        return [str(lab) for lab in range(0,1313)]
+
+    def get_train_examples(self, data_dir):
+        logger.info("LOOKING AT {}".format(os.path.join(data_dir, "train.tsv")))
+        return self._create_examples(self._read_tsv(os.path.join(data_dir, "train.tsv")), "train")
+
+    def get_dev_examples(self, data_dir):
+        return self._create_examples(self._read_tsv(os.path.join(data_dir, "dev.tsv")), "dev")
+
+    def _create_examples(self, lines, set_type):
+        """Creates examples for the training and dev sets."""
+        examples = []
+        for (i, line) in enumerate(lines):
+            if i == 0:
+                continue
+            guid = "%s-%s" % (set_type, i)
+            text_a = line[0]
+            label = line[1]
+            examples.append(InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
+        return examples
+
 glue_tasks_num_labels = {
     "cola": 2,
     "mnli": 3,
@@ -607,6 +660,8 @@ glue_tasks_num_labels = {
     "dna690":2,
     "dnapair":2,
     "dnasplice":3,
+    "dnagea30": 30, # new task num labels for GEA task only 30 classes
+    "dnageaall": 1313, # new task num labels for GEA task all
 }
 
 glue_processors = {
@@ -624,6 +679,8 @@ glue_processors = {
     "dna690": DnaPromProcessor,
     "dnapair": DnaPairProcessor,
     "dnasplice": DnaSpliceProcessor,
+    "dnagea30": DnaGEA30Processor, # relate task name to processor, make it start with dna as this turns on certain functionality in finetune script
+    "dnageaall": DnaGEAallProcessor,
 }
 
 glue_output_modes = {
@@ -641,4 +698,6 @@ glue_output_modes = {
     "dna690": "classification",
     "dnapair": "classification",
     "dnasplice": "classification",
+    "dnagea30": "classification", # define task name as classification task (not regression)
+    "dnageaall": "classification",
 }
