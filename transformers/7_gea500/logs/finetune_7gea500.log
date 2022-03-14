@@ -1,0 +1,28 @@
+============================================================
+<class 'transformers.tokenization_dna.DNATokenizer'>
+finish loading examples
+number of processes for converting feature: 8
+1 processor started !
+2 processor started !
+3 processor started !
+4 processor started !
+5 processor started !
+6 processor started !
+7 processor started !
+8 processor started !
+finish loading examples
+number of processes for converting feature: 2
+1 processor started !
+2 processor started !
+{"eval_acc": 0.0015232292460015233, "eval_top10acc": 0.010662604722010662, "eval_f1": 0.000979218801000979, "eval_mcc": 0.0007750124112295877, "eval_auc": 0.5126734530863968, "eval_precision": 0.0008885503935008886, "eval_recall": 0.0015232292460015233, "learning_rate": 3.669724770642202e-05, "loss": 7.205083155632019, "step": 20}
+{"eval_acc": 0.0015232292460015233, "eval_top10acc": 0.006854531607006854, "eval_f1": 0.00022377109802451529, "eval_mcc": 0.0007838513276826677, "eval_auc": 0.5096972349673992, "eval_precision": 0.00013003176490256903, "eval_recall": 0.0015232292460015233, "learning_rate": 7.339449541284404e-05, "loss": 7.207036924362183, "step": 40}
+{"eval_acc": 0.002284843869002285, "eval_top10acc": 0.010662604722010662, "eval_f1": 0.0005532717014391497, "eval_mcc": 0.0015386581080609136, "eval_auc": 0.5087933981015362, "eval_precision": 0.00040392775541290394, "eval_recall": 0.002284843869002285, "learning_rate": 0.00011009174311926606, "loss": 7.212857079505921, "step": 60}
+{"eval_acc": 0.0015232292460015233, "eval_top10acc": 0.011424219345011425, "eval_f1": 3.4151158720356084e-05, "eval_mcc": 0.0008426808084451158, "eval_auc": 0.5039044359407798, "eval_precision": 1.7402484665339983e-05, "eval_recall": 0.0015232292460015233, "learning_rate": 0.0001467889908256881, "loss": 7.193973875045776, "step": 80}
+{"eval_acc": 0.0007616146230007616, "eval_top10acc": 0.007616146230007616, "eval_f1": 1.2343835056738437e-06, "eval_mcc": 0.0, "eval_auc": 0.5111293258781788, "eval_precision": 6.176923138692308e-07, "eval_recall": 0.0007616146230007616, "learning_rate": 0.00018348623853211012, "loss": 7.209649467468262, "step": 100}
+{"eval_acc": 0.0007616146230007616, "eval_top10acc": 0.007616146230007616, "eval_f1": 1.159230780823077e-06, "eval_mcc": 0.0, "eval_auc": 0.49534410816785246, "eval_precision": 5.800568339685923e-07, "eval_recall": 0.0007616146230007616, "learning_rate": 0.00019776876267748477, "loss": 7.204436421394348, "step": 120}
+{"eval_acc": 0.0007616146230007616, "eval_top10acc": 0.007616146230007616, "eval_f1": 1.159230780823077e-06, "eval_mcc": 0.0, "eval_auc": 0.4958584302379581, "eval_precision": 5.800568339685923e-07, "eval_recall": 0.0007616146230007616, "learning_rate": 0.00019371196754563896, "loss": 7.236028265953064, "step": 140}
+{"eval_acc": 0.0007616146230007616, "eval_top10acc": 0.007616146230007616, "eval_f1": 1.159230780823077e-06, "eval_mcc": 0.0, "eval_auc": 0.5026731976668586, "eval_precision": 5.800568339685923e-07, "eval_recall": 0.0007616146230007616, "learning_rate": 0.00018965517241379312, "loss": 7.2242954015731815, "step": 160}
+{"eval_acc": 0.0007616146230007616, "eval_top10acc": 0.007616146230007616, "eval_f1": 1.159230780823077e-06, "eval_mcc": 0.0, "eval_auc": 0.4794131852209611, "eval_precision": 5.800568339685923e-07, "eval_recall": 0.0007616146230007616, "learning_rate": 0.00018559837728194725, "loss": 7.24428436756134, "step": 180}
+{"eval_acc": 0.0007616146230007616, "eval_top10acc": 0.007616146230007616, "eval_f1": 1.159230780823077e-06, "eval_mcc": 0.0, "eval_auc": 0.49567586331803914, "eval_precision": 5.800568339685923e-07, "eval_recall": 0.0007616146230007616, "learning_rate": 0.00018154158215010142, "loss": 7.238464641571045, "step": 200}
+{"eval_acc": 0.0007616146230007616, "eval_top10acc": 0.007616146230007616, "eval_f1": 1.159230780823077e-06, "eval_mcc": 0.0, "eval_auc": 0.5037947216391433, "eval_precision": 5.800568339685923e-07, "eval_recall": 0.0007616146230007616, "learning_rate": 0.0001774847870182556, "loss": 7.229865550994873, "step": 220}
+{"eval_acc": 0.0007616146230007616, "eval_top10acc": 0.007616146230007616, "eval_f1": 1.159230780823077e-06, "eval_mcc": 0.0, "eval_auc": 0.5148285554399717, "eval_precision": 5.800568339685923e-07, "eval_recall": 0.0007616146230007616, "learning_rate": 0.00017342799188640974, "loss": 7.1565592050552365, "step": 240}
