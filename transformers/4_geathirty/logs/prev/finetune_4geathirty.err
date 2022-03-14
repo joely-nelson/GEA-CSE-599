@@ -1,0 +1,534 @@
+03/12/2022 16:26:42 - WARNING - __main__ -   Process rank: -1, device: cpu, n_gpu: 0, distributed training: False, 16-bits training: False
+03/12/2022 16:26:42 - INFO - transformers.configuration_utils -   loading configuration file /home/mexposit/cg/gea/dnabert/model/pretrained/6-new-12w-0/config.json
+03/12/2022 16:26:42 - INFO - transformers.configuration_utils -   Model config BertConfig {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "do_sample": false,
+  "eos_token_ids": 0,
+  "finetuning_task": "dnagea30",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_eps": 1e-12,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_beams": 1,
+  "num_hidden_layers": 12,
+  "num_labels": 30,
+  "num_return_sequences": 1,
+  "num_rnn_layer": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "rnn": "lstm",
+  "rnn_dropout": 0.0,
+  "rnn_hidden": 768,
+  "split": 10,
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 4101
+}
+
+03/12/2022 16:26:42 - INFO - transformers.tokenization_utils -   loading file https://raw.githubusercontent.com/jerryji1993/DNABERT/master/src/transformers/dnabert-config/bert-config-6/vocab.txt from cache at /home/mexposit/.cache/torch/transformers/ea1474aad40c1c8ed4e1cb7c11345ddda6df27a857fb29e1d4c901d9b900d32d.26f8bd5a32e49c2a8271a46950754a4a767726709b7741c68723bc1db840a87e
+03/12/2022 16:26:42 - INFO - transformers.modeling_utils -   loading weights file /home/mexposit/cg/gea/dnabert/model/pretrained/6-new-12w-0/pytorch_model.bin
+03/12/2022 16:26:45 - INFO - transformers.modeling_utils -   Weights of BertForSequenceClassification not initialized from pretrained model: ['classifier.weight', 'classifier.bias']
+03/12/2022 16:26:45 - INFO - transformers.modeling_utils -   Weights from pretrained model not used in BertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'cls.predictions.decoder.bias']
+03/12/2022 16:26:45 - INFO - __main__ -   finish loading model
+03/12/2022 16:26:45 - INFO - __main__ -   Training/evaluation parameters Namespace(adam_epsilon=1e-08, attention_probs_dropout_prob=0.1, beta1=0.9, beta2=0.999, cache_dir='', config_name='', data_dir='/home/mexposit/cg/gea/transformers/4_geathirty/in_data', device=device(type='cpu'), do_ensemble_pred=False, do_eval=True, do_lower_case=False, do_predict=False, do_train=True, do_visualize=False, early_stop=0, eval_all_checkpoints=False, evaluate_during_training=True, fp16=False, fp16_opt_level='O1', gradient_accumulation_steps=1, hidden_dropout_prob=0.1, learning_rate=0.0002, local_rank=-1, logging_steps=50, max_grad_norm=1.0, max_seq_length=100, max_steps=-1, model_name_or_path='/home/mexposit/cg/gea/dnabert/model/pretrained/6-new-12w-0', model_type='dna', n_gpu=0, n_process=8, no_cuda=False, num_rnn_layer=2, num_train_epochs=5.0, output_dir='/home/mexposit/cg/gea/transformers/4_geathirty/model/ft_4_geathirty', output_mode='classification', overwrite_cache=False, overwrite_output_dir=True, per_gpu_eval_batch_size=32, per_gpu_pred_batch_size=8, per_gpu_train_batch_size=32, predict_dir=None, predict_scan_size=1, result_dir=None, rnn='lstm', rnn_dropout=0.0, rnn_hidden=768, save_eval_probs=True, save_steps=200, save_total_limit=None, seed=42, server_ip='', server_port='', should_continue=False, task_name='dnagea30', tokenizer_name='dna6', visualize_data_dir=None, visualize_models=None, visualize_train=False, warmup_percent=0.1, warmup_steps=0, weight_decay=0.01)
+03/12/2022 16:26:45 - INFO - __main__ -   Creating features from dataset file at /home/mexposit/cg/gea/transformers/4_geathirty/in_data
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   LOOKING AT /home/mexposit/cg/gea/transformers/4_geathirty/in_data/train.tsv
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   Writing example 0/937
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   Writing example 0/937
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   guid: train-1
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   input_ids: 2 2723 2687 2541 1959 3726 2603 2205 614 2443 1568 2163 445 1768 2962 3641 2263 846 3372 1186 634 2524 1890 3449 1493 1862 3338 1051 93 358 1418 1561 2133 328 1299 1085 230 906 3611 2142 364 1443 1663 2544 1969 3767 2765 2854 3212 548 2177 501 1992 3859 3135 237 934 3723 2589 2151 397 1573 2181 519 2064 52 195 765 3046 3980 3617 2166 460 1825 3189 455 1807 3118 172 673 2677 2502 1803 3104 115 447 1773 2984 3731 2624 2292 963 3837 3046 3979 3613 2152 3 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   label: 0 (id = 0)
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   guid: train-938
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   input_ids: 2 2433 1527 1997 3877 3208 529 2101 200 785 3125 200 785 3126 203 800 3187 446 1770 2972 3684 2435 1535 2030 4011 3744 2675 2496 1779 3008 3827 3005 3816 2961 3638 2251 797 3176 402 1594 2268 868 3457 1525 1992 3857 3125 198 778 3098 92 354 1403 1503 1901 3495 1678 2601 2199 592 2354 1212 737 2933 3525 1800 3092 67 256 1009 4024 3793 2870 3275 797 3175 399 1581 2213 648 2580 2114 249 984 3922 3387 1248 884 3523 1789 3045 3973 3590 2057 21 71 271 3 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   label: 3 (id = 3)
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   guid: train-2
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   input_ids: 2 3249 695 2766 2858 3227 605 2406 1418 1564 2147 383 1520 1969 3766 2761 2837 3144 276 1090 252 996 3969 3574 1994 3865 3158 331 1310 1132 420 1665 2551 1997 3879 3215 557 2213 648 2580 2115 253 999 3983 3629 2216 660 2627 2304 1012 4036 3842 3067 4061 3941 3461 1542 2059 29 104 404 1601 2293 966 3849 3093 72 276 1092 259 1021 4071 3981 3622 2186 540 2147 383 1519 1967 3760 2740 2755 2816 3058 4028 3809 2936 3538 1851 3296 884 3524 1796 3075 4093 4069 3 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   label: 0 (id = 0)
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   guid: train-939
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   input_ids: 2 782 3115 158 620 2466 1657 2520 1875 3389 1255 911 3632 2227 703 2798 2985 3735 2637 2342 1161 535 2127 302 1195 672 2675 2494 1771 2974 3692 2467 1662 2537 1941 3654 2315 1055 110 428 1698 2682 2521 1879 3407 1325 1192 658 2620 2276 899 3582 2028 4003 3710 2540 1955 3711 2541 1960 3730 2620 2276 899 3584 2033 4022 3785 2837 3144 274 1083 224 882 3516 1762 2939 3550 1898 3481 1623 2383 1328 1204 708 2818 3066 4060 3940 3457 1527 1998 3883 3229 613 2440 1553 3 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   label: 3 (id = 3)
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   guid: train-3
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   input_ids: 2 1069 166 652 2593 2168 466 1852 3297 886 3529 1813 3143 269 1063 142 556 2211 640 2548 1987 3839 3053 4005 3719 2574 2090 153 599 2382 1322 1179 606 2412 1441 1655 2509 1829 3207 528 2097 182 715 2848 3188 449 1784 3028 3905 3319 975 3888 3249 693 2760 2836 3137 248 979 3902 3305 917 3655 2319 1072 179 702 2794 2970 3674 2394 1370 1372 1379 1405 1511 1933 3621 2183 525 2086 140 548 2180 516 2052 4097 4086 4043 3869 3174 396 1570 2169 469 1863 3342 3 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   label: 0 (id = 0)
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   guid: train-940
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   input_ids: 2 3203 511 2030 4010 3738 2650 2394 1372 1379 1408 1522 1978 3802 2907 3422 1385 1431 1613 2341 1157 519 2062 43 158 618 2459 1631 2414 1452 1700 2691 2558 2025 3992 3667 2368 1268 962 3833 3031 3920 3379 1216 754 3001 3798 2890 3353 1109 326 1290 1052 99 384 1522 1978 3804 2915 3456 1523 1982 3819 2973 3687 2446 1580 2211 639 2543 1968 3763 2750 2794 2970 3675 2399 1389 1448 1682 2619 2272 884 3524 1793 3061 4037 3847 3087 46 172 674 2683 2528 1906 3516 1763 3 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   label: 3 (id = 3)
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   guid: train-4
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   input_ids: 2 2708 2627 2302 1001 3992 3667 2367 1261 935 3725 2597 2181 520 2068 68 259 1021 4071 3982 3626 2204 612 2435 1535 2031 4015 3757 2728 2708 2628 2307 1022 4073 3992 3668 2369 1272 977 3896 3283 832 3313 952 3796 2884 3332 1025 4088 4049 3896 3283 829 3303 909 3624 2195 575 2285 935 3727 2607 2224 691 2751 2798 2987 3744 2676 2499 1792 3060 4035 3839 3055 4016 3764 2756 2817 3063 4046 3883 3232 628 2499 1790 3051 4000 3697 2487 1742 2859 3232 627 2495 1776 2996 3 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   label: 0 (id = 0)
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   guid: train-941
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   input_ids: 2 1660 2532 1921 3574 1993 3861 3143 271 1072 178 697 2774 2890 3353 1111 335 1328 1203 703 2798 2986 3738 2652 2401 1400 1490 1852 3297 888 3539 1854 3308 929 3702 2505 1815 3151 304 1203 702 2795 2976 3699 2495 1776 2995 3773 2792 2963 3647 2288 945 3765 2759 2832 3121 183 719 2864 3249 696 2771 2880 3315 957 3816 2963 3648 2289 952 3794 2875 3293 872 3474 1596 2273 888 3539 1856 3313 952 3796 2881 3317 968 3859 3136 244 961 3829 3016 3857 3128 211 832 3 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   label: 3 (id = 3)
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   guid: train-5
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   input_ids: 2 1306 1114 346 1371 1374 1385 1429 1605 2310 1033 23 77 294 1162 539 2141 357 1413 1542 2057 22 76 290 1145 470 1867 3359 1136 435 1726 2795 2973 3686 2444 1569 2168 465 1847 3277 805 3206 521 2069 71 271 1071 174 684 2721 2678 2505 1813 3141 262 1036 35 126 490 1947 3677 2405 1414 1545 2069 70 265 1046 74 284 1121 373 1477 1797 3077 8 20 65 245 968 3857 3128 210 825 3286 844 3361 1144 466 1849 3286 842 3355 1117 357 1415 1549 3 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   label: 0 (id = 0)
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   guid: train-942
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   input_ids: 2 493 1957 3719 2574 2090 154 604 2402 1401 1495 1869 3365 1157 517 2053 5 8 18 58 220 868 3459 1533 2023 3983 3629 2214 652 2596 2179 509 2024 3985 3640 2257 821 3269 773 3078 10 26 92 353 1397 1477 1800 3090 59 222 875 3485 1638 2444 1569 2165 455 1805 3110 138 539 2141 358 1420 1572 2178 506 2010 3930 3420 1377 1398 1483 1822 3180 420 1668 2562 2042 4059 3934 3433 1432 1620 2370 1273 982 3913 3350 1100 292 1153 503 1998 3882 3225 597 3 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   label: 3 (id = 3)
+03/12/2022 16:26:45 - INFO - transformers.data.processors.glue -   Writing example 0/937
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-1875
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 2579 2112 243 957 3815 2960 3636 2244 771 3070 4075 3997 3688 2449 1592 2257 823 3280 818 3260 740 2948 3587 2045 4071 3981 3624 2196 577 2293 965 3848 3089 54 201 791 3150 298 1177 597 2376 1300 1092 259 1024 4081 4021 3782 2826 3099 95 365 1448 1683 2621 2279 909 3623 2190 556 2212 643 2560 2036 4035 3839 3056 4018 3770 2777 2903 3406 1321 1176 594 2364 1252 897 3574 1995 3871 3184 433 1720 2771 2878 3307 928 3700 2498 1785 3031 3919 3373 1189 648 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 7 (id = 7)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-1876
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 2026 3996 3683 2432 1521 1974 3787 2848 3187 447 1773 2983 3728 2609 2231 719 2862 3244 675 2686 2539 1950 3692 2468 1668 2564 2050 4092 4065 3960 3540 1859 3327 1008 4018 3772 2787 2944 3571 1982 3818 2972 3684 2435 1533 2023 3981 3624 2195 573 2279 909 3624 2196 579 2301 997 3975 3597 2088 147 575 2286 939 3742 2668 2466 1657 2519 1870 3372 1186 634 2522 1883 3423 1389 1445 1672 2580 2115 254 1002 3996 3683 2430 1514 1946 3675 2399 1390 1451 1695 2672 2482 1723 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 7 (id = 7)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-1877
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 1596 2273 888 3539 1856 3313 952 3796 2881 3317 968 3859 3136 244 961 3829 3016 3857 3128 211 832 3315 959 3823 2989 3749 2694 2569 2071 80 307 1213 741 2949 3591 2063 48 179 703 2798 2987 3742 2667 2463 1647 2479 1712 2739 2752 2803 3008 3826 3002 3804 2916 3459 1535 2032 4017 3766 2762 2843 3165 358 1418 1561 2133 326 1292 1059 125 488 1939 3646 2284 932 3715 2557 2023 3984 3633 2231 717 2856 3220 578 2298 986 3931 3423 1391 1456 1713 2743 2766 2860 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 7 (id = 7)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-1878
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 1957 3720 2579 2112 243 957 3815 2960 3636 2243 767 3054 4011 3741 2663 2447 1583 2223 685 2728 2705 2616 2259 829 3304 916 3650 2299 992 3954 3516 1764 2947 3581 2021 3974 3595 2080 115 447 1774 2987 3743 2669 2469 1671 2573 2086 138 540 2148 387 1536 2036 4036 3841 3061 4037 3847 3085 40 148 579 2301 999 3982 3627 2208 625 2488 1745 2871 3278 812 3234 635 2527 1901 3496 1683 2624 2291 959 3822 2988 3747 2686 2538 1947 3679 2415 1456 1714 2748 2787 2942 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 7 (id = 7)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-1879
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 4000 3698 2489 1750 2892 3362 1146 476 1890 3452 1506 1916 3556 1921 3573 1990 3850 3100 98 380 1505 1912 3539 1856 3316 961 3830 3017 3861 3143 269 1061 134 522 2074 91 349 1383 1421 1575 2189 552 2196 577 2293 965 3847 3085 40 147 574 2281 918 3660 2337 1143 463 1837 3238 652 2593 2166 458 1817 3159 336 1331 1215 749 2981 3720 2579 2110 233 918 3658 2330 1113 344 1364 1346 1276 993 3959 3533 1831 3214 553 2198 585 2328 1105 309 1222 777 3095 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 7 (id = 7)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   Writing example 0/937
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-2812
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 2982 3722 2588 2146 378 1500 1891 3454 1516 1956 3715 2560 2033 4022 3785 2840 3155 319 1261 935 3727 2605 2215 654 2602 2204 612 2434 1531 2015 3952 3508 1732 2820 3074 4091 4061 3944 3476 1603 2303 1005 4006 3724 2596 2178 507 2015 3950 3500 1700 2691 2557 2023 3981 3624 2195 573 2279 911 3632 2228 707 2813 3045 3975 3597 2088 147 575 2288 947 3774 2796 2979 3709 2535 1935 3632 2226 698 2778 2907 3424 1393 1464 1747 2880 3315 958 3818 2972 3683 2430 1514 1948 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 11 (id = 11)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-2813
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 147 575 2288 947 3774 2796 2979 3709 2535 1935 3632 2226 698 2778 2907 3424 1393 1464 1747 2880 3315 958 3818 2972 3683 2430 1514 1948 3683 2431 1520 1971 3775 2797 2982 3723 2592 2162 444 1764 2947 3582 2028 4004 3715 2560 2033 4022 3785 2840 3155 319 1261 935 3727 2605 2215 654 2602 2204 612 2434 1531 2015 3952 3508 1732 2820 3074 4091 4061 3944 3476 1604 2305 1016 4049 3895 3280 819 3262 746 2969 3669 2376 1297 1079 206 812 3236 643 2559 2032 4018 3771 2784 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 11 (id = 11)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-2814
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 3659 2336 1139 447 1773 2984 3731 2621 2277 903 3597 2085 134 524 2084 131 512 2036 4035 3837 3045 3976 3603 2109 229 904 3603 2112 243 958 3819 2976 3697 2485 1733 2823 3088 52 194 764 3043 3965 3560 1939 3648 2292 963 3838 3052 4002 3706 2524 1891 3455 1520 1972 3778 2812 3043 3966 3564 1954 3708 2531 1919 3565 1960 3732 2625 2295 975 3885 3238 652 2596 2179 511 2030 4012 3745 2679 2511 1839 3247 688 2740 2753 2807 3023 3885 3237 648 2578 2108 228 898 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 11 (id = 11)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-2815
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 1919 3565 1960 3732 2625 2295 975 3885 3238 652 2596 2179 511 2030 4012 3745 2679 2510 1835 3231 624 2484 1729 2807 3023 3885 3237 648 2578 2108 228 898 3580 2020 3971 3582 2025 3990 3659 2336 1139 447 1773 2984 3731 2623 2285 935 3728 2609 2230 716 2852 3203 512 2036 4035 3837 3045 3976 3603 2109 229 904 3603 2112 243 958 3819 2976 3697 2485 1733 2823 3088 52 194 764 3043 3965 3560 1939 3648 2292 963 3838 3052 4002 3706 2524 1891 3455 1520 1972 3778 2812 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 11 (id = 11)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-2816
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 2272 884 3521 1781 3016 3857 3127 206 812 3236 644 2563 2047 4078 4010 3738 2651 2400 1394 1466 1754 2906 3417 1366 1355 1310 1132 418 1658 2524 1890 3450 1498 1884 3426 1403 1504 1908 3522 1788 3041 3957 3527 1808 3123 190 747 2974 3691 2463 1646 2476 1697 2680 2514 1849 3288 852 3393 1271 973 3877 3205 518 2059 31 112 435 1727 2800 2996 3780 2817 3064 4051 3904 3316 961 3830 3018 3866 3164 353 1397 1479 1808 3122 186 732 2914 3452 1505 1909 3528 1811 3133 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 11 (id = 11)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   Writing example 0/937
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-3749
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 3198 492 1954 3706 2523 1886 3436 1443 1663 2541 1959 3726 2602 2203 606 2410 1436 1636 2436 1540 2050 4090 4060 3938 3451 1503 1903 3502 1708 2722 2681 2520 1873 3381 1224 788 3140 260 1025 4085 4038 3851 3102 107 414 1643 2464 1652 2498 1788 3041 3958 3532 1825 3189 455 1806 3114 156 610 2425 1496 1873 3382 1228 803 3199 496 1971 3775 2799 2989 3752 2706 2620 2274 891 3549 1896 3474 1595 2270 874 3483 1630 2411 1438 1643 2464 1652 2500 1796 3076 4099 4096 4082 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 14 (id = 14)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-3750
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 1754 2906 3417 1366 1354 1306 1116 353 1398 1484 1827 3199 494 1964 3748 2691 2557 2024 3986 3642 2267 863 3439 1454 1705 2711 2638 2347 1182 619 2464 1651 2496 1778 3002 3801 2901 3399 1296 1075 190 745 2968 3667 2365 1254 908 3620 2177 502 1996 3874 3194 474 1882 3419 1375 1391 1453 1704 2706 2619 2269 871 3472 1585 2231 720 2866 3258 732 2914 3449 1493 1861 3333 1031 16 49 183 720 2868 3267 767 3053 4008 3730 2619 2270 874 3481 1621 2376 1299 1086 235 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 14 (id = 14)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-3751
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 703 2798 2988 3745 2678 2506 1820 3171 382 1516 1955 3710 2540 1954 3706 2524 1891 3454 1516 1955 3710 2540 1955 3710 2540 1955 3710 2540 1954 3706 2524 1890 3450 1500 1890 3450 1500 1891 3454 1516 1955 3710 2540 1955 3710 2540 1955 3710 2540 1955 3710 2540 1955 3710 2540 1955 3710 2540 1954 3706 2524 1890 3450 1500 1891 3453 1510 1932 3620 2179 511 2029 4008 3730 2620 2275 896 3572 1985 3832 3028 3907 3328 1012 4036 3841 3062 4043 3870 3180 418 1660 2532 1924 3587 2048 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 15 (id = 15)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-3752
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 2470 1674 2586 2139 351 1390 1452 1699 2686 2539 1951 3694 2476 1698 2681 2520 1873 3382 1227 799 3182 427 1695 2670 2476 1699 2686 2540 1955 3712 2547 1983 3824 2995 3774 2794 2971 3678 2412 1443 1662 2540 1955 3711 2544 1971 3775 2798 2987 3742 2668 2467 1662 2540 1955 3711 2544 1971 3774 2793 2966 3659 2333 1127 397 1576 2195 576 2292 963 3837 3048 3985 3640 2260 836 3332 1026 4091 4064 3954 3515 1757 2918 3467 1567 2157 424 1683 2622 2283 928 3697 2486 1738 2842 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 15 (id = 15)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-3753
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 1469 1768 2963 3648 2289 950 3788 2852 3203 509 2024 3986 3643 2270 876 3489 1656 2513 1845 3272 787 3133 232 915 3646 2282 924 3683 2431 1520 1969 3765 2758 2827 3102 107 416 1650 2492 1764 2948 3587 2046 4076 4004 3714 2554 2012 3940 3460 1537 2038 4041 3863 3150 300 1188 644 2562 2043 4063 3952 3508 1731 2813 3048 3986 3641 2262 842 3355 1119 366 1451 1696 2673 2488 1748 2884 3331 1024 4083 4029 3815 2958 3628 2211 640 2545 1975 3790 2858 3227 606 2411 1438 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 15 (id = 15)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   Writing example 0/937
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-4686
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 993 3959 3535 1840 3251 703 2800 2993 3768 2772 2881 3320 980 3908 3331 1024 4084 4035 3838 3050 3994 3673 2391 1359 1326 1196 675 2686 2537 1943 3664 2356 1219 767 3054 4011 3742 2667 2463 1645 2469 1672 2580 2116 259 1024 4084 4035 3838 3050 3995 3680 2418 1468 1763 2943 3568 1970 3772 2788 2946 3578 2011 3936 3444 1475 1790 3051 3999 3696 2484 1731 2816 3059 4031 3821 2983 3727 2605 2213 647 2574 2090 155 606 2411 1439 1647 2478 1707 2719 2670 2475 1693 2661 2440 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 18 (id = 18)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-4687
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 1693 2661 2437 1544 2065 56 211 829 3303 911 3631 2222 684 2722 2682 2524 1889 3448 1489 1845 3271 781 3111 142 555 2205 616 2451 1598 2283 927 3693 2472 1681 2613 2246 780 3105 120 465 1845 3272 787 3134 235 926 3689 2455 1615 2350 1195 670 2665 2455 1614 2345 1175 591 2350 1195 671 2669 2472 1681 2613 2247 784 3124 193 757 3016 3860 3140 257 1014 4041 3862 3148 290 1145 470 1868 3362 1148 484 1921 3574 1995 3869 3173 392 1553 2104 210 826 3292 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 18 (id = 18)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-4688
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 4058 3930 3417 1367 1358 1324 1185 630 2508 1827 3197 486 1929 3606 2121 279 1101 294 1164 545 2166 460 1828 3203 509 2022 3977 3606 2124 291 1149 488 1939 3645 2278 907 3614 2153 406 1610 2331 1117 358 1417 1558 2124 291 1150 491 1950 3689 2453 1607 2319 1070 170 668 2657 2424 1490 1849 3287 847 3374 1193 662 2635 2334 1129 406 1610 2329 1110 329 1301 1094 265 1045 69 263 1037 37 136 530 2105 214 844 3362 1146 474 1882 3417 1366 1353 1301 1094 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 18 (id = 18)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-4689
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 1231 814 3243 671 2671 2477 1703 2703 2608 2226 697 2775 2893 3367 1168 563 2239 750 2985 3735 2639 2352 1203 703 2799 2989 3750 2698 2586 2140 355 1408 1522 1979 3805 2917 3462 1548 2084 132 516 2051 4096 4084 4033 3832 3026 3898 3292 866 3450 1497 1879 3408 1329 1207 717 2854 3210 538 2138 348 1380 1409 1525 1989 3848 3090 59 223 879 3504 1714 2746 2780 2913 3446 1482 1818 3162 348 1380 1410 1532 2019 3967 3565 1957 3717 2565 2055 13 37 133 519 2062 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 18 (id = 18)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-4690
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 2441 1560 2131 318 1259 925 3687 2448 1587 2238 748 2978 3705 2520 1876 3394 1273 982 3915 3358 1131 413 1640 2450 1594 2267 864 3444 1474 1788 3042 3961 3544 1876 3394 1275 992 3954 3514 1755 2912 3443 1470 1771 2975 3693 2469 1672 2579 2110 236 932 3716 2563 2046 4076 4002 3708 2529 1912 3539 1853 3303 912 3633 2229 711 2831 3119 175 687 2735 2736 2738 2746 2779 2909 3432 1427 1599 2287 944 3761 2743 2767 2864 3251 702 2796 2979 3712 2547 1983 3822 2986 3737 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 18 (id = 18)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   Writing example 0/937
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-5623
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 911 3632 2227 703 2798 2985 3735 2637 2342 1161 535 2127 302 1195 672 2675 2494 1771 2974 3692 2467 1662 2537 1941 3654 2315 1055 110 428 1698 2682 2521 1879 3407 1325 1192 658 2620 2276 899 3582 2028 4003 3710 2540 1955 3711 2541 1960 3730 2620 2276 899 3584 2033 4022 3785 2837 3144 274 1083 224 882 3516 1762 2939 3550 1898 3481 1623 2383 1328 1204 708 2818 3066 4060 3940 3457 1527 1998 3883 3229 613 2440 1553 2103 208 817 3254 713 2840 3154 314 1241 855 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 22 (id = 22)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-5624
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 167 653 2597 2182 524 2081 118 458 1819 3167 365 1446 1676 2593 2168 467 1855 3311 943 3758 2731 2720 2673 2486 1737 2840 3154 313 1237 839 3342 1068 164 641 2552 2004 3906 3324 993 3958 3529 1816 3154 314 1243 864 3441 1461 1733 2822 3083 30 106 410 1627 2398 1386 1436 1635 2431 1519 1966 3756 2723 2685 2536 1938 3641 2262 843 3359 1135 429 1702 2697 2582 2123 286 1132 418 1657 2520 1875 3390 1258 921 3669 2374 1292 1060 130 506 2010 3930 3420 1379 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 22 (id = 22)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-5625
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 2634 2329 1109 326 1290 1050 91 351 1391 1455 1710 2731 2720 2674 2491 1757 2917 3461 1541 2053 6 9 21 72 276 1090 250 985 3926 3403 1309 1125 392 1554 2108 225 888 3537 1845 3269 774 3083 29 103 399 1581 2214 652 2593 2168 466 1852 3297 887 3536 1841 3255 718 2860 3233 629 2502 1803 3103 112 436 1730 2812 3041 3960 3537 1845 3270 780 3108 131 509 2021 3973 3589 2056 18 58 218 857 3414 1356 1315 1149 486 1930 3610 2139 350 1386 1434 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 22 (id = 22)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-5626
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 3231 624 2483 1726 2795 2974 3691 2462 1643 2463 1648 2481 1718 2762 2841 3158 330 1305 1109 325 1285 1030 11 30 106 411 1629 2408 1428 1604 2306 1019 4064 3954 3515 1757 2917 3463 1549 2087 144 562 2235 736 2930 3515 1760 2930 3515 1759 2925 3494 1676 2594 2169 469 1862 3339 1056 113 437 1734 2826 3099 95 367 1456 1715 2752 2804 3011 3839 3056 4019 3775 2797 2982 3724 2596 2179 512 2036 4035 3839 3056 4020 3780 2817 3064 4051 3901 3302 908 3619 2176 497 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 22 (id = 22)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-5627
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 1492 1858 3322 987 3934 3434 1433 1624 2387 1344 1268 964 3842 3066 4058 3931 3422 1386 1436 1636 2433 1526 1995 3870 3180 418 1657 2518 1868 3362 1148 484 1922 3579 2014 3946 3483 1629 2405 1416 1554 2106 220 867 3453 1512 1937 3638 2251 797 3176 404 1602 2300 996 3971 3583 2031 4015 3759 2736 2739 2751 2799 2989 3751 2704 2609 2232 723 2878 3306 923 3677 2408 1428 1604 2307 1023 4077 4006 3724 2594 2171 480 1908 3523 1790 3051 3998 3692 2467 1663 2542 1962 3739 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 22 (id = 22)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   Writing example 0/941
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-6560
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 1374 1385 1431 1616 2356 1220 772 3074 4091 4062 3948 3489 1655 2512 1843 3262 747 2973 3688 2450 1596 2276 897 3573 1991 3856 3121 181 709 2821 3079 14 43 157 615 2448 1586 2234 729 2901 3400 1300 1092 257 1014 4042 3866 3162 348 1380 1410 1531 2013 3942 3468 1569 2168 465 1846 3274 793 3158 331 1309 1125 389 1541 2053 8 20 65 246 971 3870 3178 411 1629 2407 1423 1582 2217 664 2641 2358 1227 799 3182 426 1690 2650 2393 1365 1349 1286 1034 25 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 26 (id = 26)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-6561
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 140 546 2171 478 1897 3480 1618 2361 1237 839 3341 1063 141 550 2185 536 2132 321 1272 980 3906 3323 991 3950 3500 1697 2680 2514 1850 3291 862 3433 1431 1614 2347 1182 619 2461 1639 2445 1573 2183 526 2092 162 636 2531 1917 3557 1925 3591 2062 44 164 643 2559 2029 4006 3724 2593 2166 460 1828 3203 509 2023 3981 3623 2191 557 2216 660 2625 2296 978 3898 3292 865 3445 1480 1810 3129 216 851 3389 1256 916 3650 2298 987 3933 3432 1425 1589 2248 787 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 26 (id = 26)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-6562
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 1097 278 1097 278 1097 278 1097 278 1097 278 1097 278 1097 278 1100 290 1148 482 1916 3554 1916 3554 1916 3554 1916 3554 1916 3554 1916 3554 1916 3554 1916 3554 1916 3554 1913 3542 1868 3361 1141 456 1810 3129 214 842 3354 1116 355 1406 1513 1942 3658 2330 1116 353 1400 1489 1848 3284 836 3330 1019 4062 3947 3485 1639 2446 1580 2210 634 2522 1881 3416 1363 1342 1259 925 3688 2450 1595 2270 876 3492 1667 2558 2026 3996 3684 2433 1525 1991 3856 3122 186 731 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 26 (id = 26)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-6563
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 1261 933 3717 2566 2059 29 104 402 1593 2262 844 3362 1145 470 1868 3363 1151 495 1967 3757 2728 2708 2626 2298 987 3933 3432 1427 1597 2277 904 3601 2104 209 823 3277 807 3214 556 2209 630 2506 1819 3165 357 1416 1556 2116 257 1013 4038 3849 3093 72 273 1080 209 824 3283 829 3301 903 3597 2088 145 568 2258 825 3288 852 3393 1271 973 3879 3215 558 2217 661 2630 2316 1058 123 479 1902 3498 1691 2654 2411 1438 1644 2468 1665 2550 1994 3867 3167 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 26 (id = 26)
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   guid: train-6564
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   input_ids: 2 2795 2973 3686 2444 1569 2168 465 1847 3277 805 3206 521 2069 71 271 1071 174 684 2721 2678 2505 1813 3141 262 1036 35 126 490 1947 3677 2405 1414 1545 2069 70 265 1046 74 284 1121 373 1477 1797 3077 8 20 65 245 968 3857 3128 210 825 3286 844 3361 1144 466 1849 3286 842 3355 1117 357 1415 1549 2086 138 538 2139 351 1392 1458 1724 2786 2939 3552 1907 3519 1775 2990 3754 2713 2646 2378 1307 1119 367 1454 1706 2714 2650 2394 1370 1372 1379 3 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:26:46 - INFO - transformers.data.processors.glue -   label: 26 (id = 26)
+03/12/2022 16:26:51 - INFO - __main__ -   Saving features into cached file /home/mexposit/cg/gea/transformers/4_geathirty/in_data/cached_train_6-new-12w-0_100_dnagea30
+03/12/2022 16:26:52 - INFO - __main__ -   ***** Running training *****
+03/12/2022 16:26:52 - INFO - __main__ -     Num examples = 7500
+03/12/2022 16:26:52 - INFO - __main__ -     Num Epochs = 5
+03/12/2022 16:26:52 - INFO - __main__ -     Instantaneous batch size per GPU = 32
+03/12/2022 16:26:52 - INFO - __main__ -     Total train batch size (w. parallel, distributed & accumulation) = 32
+03/12/2022 16:26:52 - INFO - __main__ -     Gradient Accumulation steps = 1
+03/12/2022 16:26:52 - INFO - __main__ -     Total optimization steps = 1175
+03/12/2022 16:26:52 - INFO - __main__ -     Continuing training from checkpoint, will skip to saved global_step
+03/12/2022 16:26:52 - INFO - __main__ -     Continuing training from epoch 0
+03/12/2022 16:26:52 - INFO - __main__ -     Continuing training from global step 0
+03/12/2022 16:26:52 - INFO - __main__ -     Will skip the first 0 steps in the first epoch
+Epoch:   0%|          | 0/5 [00:00<?, ?it/s]
+Iteration:   0%|          | 0/235 [00:00<?, ?it/s][A/home/mexposit/cg/gea/dnabert/src/transformers/optimization.py:155: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha) (Triggered internally at  /opt/conda/conda-bld/pytorch_1640811701593/work/torch/csrc/utils/python_arg_parser.cpp:1050.)
+  exp_avg.mul_(beta1).add_(1.0 - beta1, grad)
+
+Iteration:   0%|          | 1/235 [00:22<1:27:00, 22.31s/it][A
+Iteration:   1%|          | 2/235 [00:43<1:24:49, 21.84s/it][A
+Iteration:   1%|▏         | 3/235 [01:04<1:22:56, 21.45s/it][A
+Iteration:   2%|▏         | 4/235 [01:25<1:21:42, 21.22s/it][A
+Iteration:   2%|▏         | 5/235 [01:46<1:20:41, 21.05s/it][A
+Iteration:   3%|▎         | 6/235 [02:07<1:19:46, 20.90s/it][A
+Iteration:   3%|▎         | 7/235 [02:27<1:19:16, 20.86s/it][A
+Iteration:   3%|▎         | 8/235 [02:48<1:18:39, 20.79s/it][A
+Iteration:   4%|▍         | 9/235 [03:09<1:18:10, 20.76s/it][A
+Iteration:   4%|▍         | 10/235 [03:29<1:17:47, 20.74s/it][A
+Iteration:   5%|▍         | 11/235 [03:50<1:17:14, 20.69s/it][A
+Iteration:   5%|▌         | 12/235 [04:11<1:16:55, 20.70s/it][A
+Iteration:   6%|▌         | 13/235 [04:31<1:16:31, 20.68s/it][A
+Iteration:   6%|▌         | 14/235 [04:52<1:16:02, 20.65s/it][A
+Iteration:   6%|▋         | 15/235 [05:12<1:15:40, 20.64s/it][A
+Iteration:   7%|▋         | 16/235 [05:33<1:15:19, 20.64s/it][A
+Iteration:   7%|▋         | 17/235 [05:54<1:14:50, 20.60s/it][A
+Iteration:   8%|▊         | 18/235 [06:14<1:14:39, 20.65s/it][A
+Iteration:   8%|▊         | 19/235 [06:35<1:14:16, 20.63s/it][A
+Iteration:   9%|▊         | 20/235 [06:56<1:13:51, 20.61s/it][A
+Iteration:   9%|▉         | 21/235 [07:16<1:13:30, 20.61s/it][A
+Iteration:   9%|▉         | 22/235 [07:37<1:13:10, 20.61s/it][A
+Iteration:  10%|▉         | 23/235 [07:57<1:12:41, 20.57s/it][A
+Iteration:  10%|█         | 24/235 [08:18<1:12:29, 20.61s/it][A
+Iteration:  11%|█         | 25/235 [08:39<1:12:06, 20.60s/it][A
+Iteration:  11%|█         | 26/235 [08:59<1:11:42, 20.59s/it][A
+Iteration:  11%|█▏        | 27/235 [09:20<1:11:26, 20.61s/it][A
+Iteration:  12%|█▏        | 28/235 [09:40<1:11:09, 20.63s/it][A
+Iteration:  12%|█▏        | 29/235 [10:01<1:10:41, 20.59s/it][A
+Iteration:  13%|█▎        | 30/235 [10:22<1:10:25, 20.61s/it][A
+Iteration:  13%|█▎        | 31/235 [10:42<1:10:00, 20.59s/it][A
+Iteration:  14%|█▎        | 32/235 [11:03<1:09:34, 20.56s/it][A
+Iteration:  14%|█▍        | 33/235 [11:23<1:09:15, 20.57s/it][A
+Iteration:  14%|█▍        | 34/235 [11:44<1:08:50, 20.55s/it][A
+Iteration:  15%|█▍        | 35/235 [12:04<1:08:27, 20.54s/it][A
+Iteration:  15%|█▌        | 36/235 [12:25<1:08:08, 20.55s/it][A
+Iteration:  16%|█▌        | 37/235 [12:45<1:07:53, 20.58s/it][A
+Iteration:  16%|█▌        | 38/235 [13:06<1:07:30, 20.56s/it][A
+Iteration:  17%|█▋        | 39/235 [13:27<1:07:10, 20.56s/it][A
+Iteration:  17%|█▋        | 40/235 [13:47<1:06:56, 20.60s/it][A
+Iteration:  17%|█▋        | 41/235 [14:08<1:06:29, 20.57s/it][A
+Iteration:  18%|█▊        | 42/235 [14:28<1:06:07, 20.56s/it][A
+Iteration:  18%|█▊        | 43/235 [14:49<1:05:56, 20.60s/it][A
+Iteration:  19%|█▊        | 44/235 [15:09<1:05:28, 20.57s/it][A
+Iteration:  19%|█▉        | 45/235 [15:30<1:05:05, 20.56s/it][A
+Iteration:  20%|█▉        | 46/235 [15:51<1:04:52, 20.60s/it][A
+Iteration:  20%|██        | 47/235 [16:11<1:04:31, 20.59s/it][A
+Iteration:  20%|██        | 48/235 [16:32<1:04:05, 20.56s/it][A
+Iteration:  21%|██        | 49/235 [16:52<1:03:49, 20.59s/it][A03/12/2022 16:44:06 - INFO - __main__ -   Creating features from dataset file at /home/mexposit/cg/gea/transformers/4_geathirty/in_data
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   Writing example 0/495
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   guid: dev-1
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   input_ids: 2 1634 2425 1495 1869 3365 1157 520 2066 60 228 898 3580 2017 3958 3531 1823 3182 427 1694 2667 2464 1649 2488 1747 2879 3310 939 3742 2665 2456 1617 2357 1223 782 3113 150 585 2328 1106 316 1249 888 3538 1851 3296 882 3513 1750 2890 3353 1111 336 1330 1209 728 2897 3382 1227 799 3181 424 1681 2615 2253 806 3212 545 2166 457 1813 3144 273 1078 201 791 3149 294 1162 540 2145 374 1484 1825 3192 466 1850 3290 860 3428 1409 1527 1997 3877 3205 519 2063 3 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   label: 0 (id = 0)
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   guid: dev-2
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   input_ids: 2 1938 3644 2275 894 3562 1947 3677 2408 1427 1597 2280 913 3638 2249 791 3151 303 1199 688 2737 2743 2767 2861 3239 653 2598 2188 545 2165 456 1811 3133 232 915 3645 2279 912 3633 2230 714 2842 3163 350 1386 1435 1629 2405 1416 1553 2104 211 832 3315 959 3821 2982 3724 2595 2175 495 1968 3761 2744 2772 2884 3331 1022 4073 3991 3664 2354 1211 735 2925 3496 1684 2625 2296 979 3904 3315 957 3815 2959 3629 2214 651 2590 2154 410 1626 2394 1371 1373 1381 1416 3 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   label: 0 (id = 0)
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   guid: dev-3
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   input_ids: 2 2929 3511 1742 2860 3235 637 2536 1937 3637 2246 778 3099 94 362 1433 1623 2381 1320 1169 567 2256 817 3254 715 2847 3181 424 1681 2613 2246 779 3103 109 423 1677 2600 2196 577 2294 971 3869 3176 404 1602 2300 995 3965 3560 1937 3637 2246 777 3095 79 301 1189 646 2569 2069 70 268 1060 129 504 2004 3907 3325 1000 3987 3647 2285 935 3728 2609 2231 719 2861 3240 657 2616 2260 836 3330 1019 4062 3948 3489 1655 2512 1841 3253 710 2827 3101 102 394 3 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   label: 0 (id = 0)
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   guid: dev-4
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   input_ids: 2 413 1637 2438 1546 2073 88 338 1339 1245 872 3475 1597 2277 903 3599 2093 166 649 2584 2130 315 1247 879 3504 1715 2751 2799 2991 3758 2729 2709 2631 2318 1067 159 624 2483 1727 2799 2989 3750 2699 2591 2159 432 1715 2751 2799 2991 3758 2729 2709 2631 2318 1067 159 624 2483 1727 2799 2989 3752 2706 2618 2267 863 3440 1459 1727 2799 2989 3750 2698 2587 2142 363 1439 1648 2483 1727 2799 2991 3757 2726 2700 2596 2179 510 2028 4001 3703 2510 1833 3221 582 2314 3 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   label: 0 (id = 0)
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   guid: dev-5
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   input_ids: 2 3733 2630 2316 1057 120 466 1852 3297 888 3539 1854 3305 917 3655 2318 1067 157 615 2445 1574 2186 537 2133 326 1290 1052 99 384 1522 1978 3804 2915 3456 1523 1982 3819 2973 3687 2446 1580 2211 639 2543 1968 3763 2750 2794 2970 3675 2399 1389 1448 1682 2619 2272 884 3524 1793 3061 4037 3847 3087 46 172 674 2683 2528 1906 3516 1763 2943 3565 1960 3731 2622 2284 931 3709 2534 1930 3609 2133 326 1292 1057 117 454 1803 3104 116 451 1791 3053 4005 3719 2576 3 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   label: 0 (id = 0)
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   Writing example 0/495
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   guid: dev-496
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   input_ids: 2 2467 1664 2548 1985 3829 3013 3846 3082 26 89 341 1352 1299 1086 236 932 3714 2554 2010 3930 3419 1375 1390 1452 1700 2692 2563 2048 4081 4024 3795 2877 3301 901 3592 2067 64 242 956 3812 2948 3587 2045 4069 3973 3589 2055 14 42 155 605 2407 1422 1578 2201 598 2379 1309 1127 399 1581 2216 660 2626 2298 986 3929 3414 1356 1314 1145 470 1868 3361 1143 461 1832 3219 574 2282 922 3676 2401 1398 1481 1813 3142 265 1047 78 298 1177 598 2379 1309 1128 3 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   label: 22 (id = 22)
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   guid: dev-497
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   input_ids: 2 345 1366 1354 1306 1113 342 1354 1306 1113 342 1354 1306 1114 346 1370 1372 1378 1402 1498 1881 3414 1354 1307 1120 371 1470 1769 2966 3658 2330 1114 348 1378 1401 1494 1866 3354 1114 345 1368 1362 1338 1242 858 3418 1369 1365 1350 1290 1049 88 337 1333 1221 774 3082 26 90 345 1366 1354 1305 1112 337 1333 1222 779 3104 114 442 1754 2906 3420 1377 1397 1479 1806 3113 152 594 2362 1242 858 3418 1369 1366 1356 1315 1149 487 1934 3627 2206 617 2453 1607 3 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   label: 22 (id = 22)
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   guid: dev-498
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   input_ids: 2 377 1493 1861 3333 1032 17 54 201 789 3141 261 1031 14 41 152 594 2364 1249 886 3531 1821 3173 390 1547 2078 108 417 1655 2512 1842 3260 739 2942 3562 1947 3678 2409 1430 1612 2339 1149 488 1939 3647 2286 940 3746 2684 2529 1912 3537 1846 3274 793 3157 326 1290 1052 98 380 1505 1910 3532 1826 3194 474 1881 3413 1350 1290 1049 86 330 1305 1109 325 1287 1037 37 134 522 2074 89 341 1349 1286 1036 36 129 502 1995 3869 3173 389 1543 2061 3 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   label: 22 (id = 22)
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   guid: dev-499
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   input_ids: 2 1994 3865 3158 329 1301 1093 262 1035 29 104 403 1598 2283 926 3689 2454 1610 2330 1113 341 1349 1286 1034 28 97 374 1482 1820 3170 379 1504 1906 3516 1762 2938 3546 1881 3414 1354 1306 1115 350 1385 1430 1610 2330 1116 353 1398 1482 1818 3162 346 1372 1377 1398 1482 1817 3158 330 1306 1114 346 1370 1369 1365 1352 1300 1090 251 992 3954 3514 1754 2906 3418 1369 1366 1356 1314 1148 481 1910 3530 1818 3162 346 1371 1375 1391 1455 1712 2737 2742 2762 2843 3 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   label: 22 (id = 22)
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   *** Example ***
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   guid: dev-500
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   input_ids: 2 3332 1026 4092 4065 3957 3527 1806 3114 155 607 2415 1453 1702 2699 2591 2157 421 1671 2576 2100 195 767 3055 4014 3756 2722 2684 2529 1910 3532 1827 3197 488 1937 3637 2248 785 3125 197 773 3079 13 39 142 555 2208 628 2499 1790 3052 4004 3716 2561 2040 4052 3907 3327 1006 4011 3743 2669 2471 1679 2608 2225 696 2769 2871 3279 815 3246 684 2722 2681 2519 1871 3375 1199 688 2739 2750 2796 2977 3703 2512 1844 3267 768 3060 4035 3839 3054 4012 3748 2689 2549 3 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   attention_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   token_type_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/12/2022 16:44:06 - INFO - transformers.data.processors.glue -   label: 22 (id = 22)
+03/12/2022 16:44:07 - INFO - __main__ -   Saving features into cached file /home/mexposit/cg/gea/transformers/4_geathirty/in_data/cached_dev_6-new-12w-0_100_dnagea30
+03/12/2022 16:44:07 - INFO - __main__ -   ***** Running evaluation  *****
+03/12/2022 16:44:07 - INFO - __main__ -     Num examples = 990
+03/12/2022 16:44:07 - INFO - __main__ -     Batch size = 32
+
+
+Evaluating:   0%|          | 0/31 [00:00<?, ?it/s][A[A
+
+Evaluating:   3%|▎         | 1/31 [00:06<03:12,  6.42s/it][A[A
+
+Evaluating:   6%|▋         | 2/31 [00:12<03:05,  6.40s/it][A[A
+
+Evaluating:  10%|▉         | 3/31 [00:19<02:59,  6.42s/it][A[A
+
+Evaluating:  13%|█▎        | 4/31 [00:25<02:53,  6.42s/it][A[A
+
+Evaluating:  16%|█▌        | 5/31 [00:32<02:46,  6.41s/it][A[A
+
+Evaluating:  19%|█▉        | 6/31 [00:38<02:40,  6.43s/it][A[A
+
+Evaluating:  23%|██▎       | 7/31 [00:44<02:34,  6.43s/it][A[A
+
+Evaluating:  26%|██▌       | 8/31 [00:51<02:27,  6.43s/it][A[A
+
+Evaluating:  29%|██▉       | 9/31 [00:57<02:21,  6.43s/it][A[A
+
+Evaluating:  32%|███▏      | 10/31 [01:04<02:15,  6.44s/it][A[A
+
+Evaluating:  35%|███▌      | 11/31 [01:10<02:08,  6.44s/it][A[A
+
+Evaluating:  39%|███▊      | 12/31 [01:17<02:02,  6.43s/it][A[A
+
+Evaluating:  42%|████▏     | 13/31 [01:23<01:55,  6.44s/it][A[A
+
+Evaluating:  45%|████▌     | 14/31 [01:30<01:49,  6.44s/it][A[A
+
+Evaluating:  48%|████▊     | 15/31 [01:36<01:43,  6.44s/it][A[A
+
+Evaluating:  52%|█████▏    | 16/31 [01:42<01:36,  6.43s/it][A[A
+
+Evaluating:  55%|█████▍    | 17/31 [01:49<01:30,  6.44s/it][A[A
+
+Evaluating:  58%|█████▊    | 18/31 [01:55<01:23,  6.43s/it][A[A
+
+Evaluating:  61%|██████▏   | 19/31 [02:02<01:17,  6.42s/it][A[A
+
+Evaluating:  65%|██████▍   | 20/31 [02:08<01:10,  6.43s/it][A[A
+
+Evaluating:  68%|██████▊   | 21/31 [02:15<01:04,  6.43s/it][A[A
+
+Evaluating:  71%|███████   | 22/31 [02:21<00:57,  6.43s/it][A[A
+
+Evaluating:  74%|███████▍  | 23/31 [02:27<00:51,  6.43s/it][A[A
+
+Evaluating:  77%|███████▋  | 24/31 [02:34<00:45,  6.45s/it][A[A
+
+Evaluating:  81%|████████  | 25/31 [02:40<00:38,  6.45s/it][A[A
+
+Evaluating:  84%|████████▍ | 26/31 [02:47<00:32,  6.44s/it][A[A
+
+Evaluating:  87%|████████▋ | 27/31 [02:53<00:25,  6.45s/it][A[A
+
+Evaluating:  90%|█████████ | 28/31 [03:00<00:19,  6.44s/it][A[A
+
+Evaluating:  94%|█████████▎| 29/31 [03:06<00:12,  6.43s/it][A[A
+
+Evaluating:  97%|█████████▋| 30/31 [03:12<00:06,  6.43s/it][A[A
+
+Evaluating: 100%|██████████| 31/31 [03:19<00:00,  6.33s/it][A[AEvaluating: 100%|██████████| 31/31 [03:19<00:00,  6.42s/it]
+Iteration:  21%|██        | 49/235 [20:33<1:18:03, 25.18s/it]
+Epoch:   0%|          | 0/5 [20:33<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/mexposit/cg/gea/transformers/trans_utils/run_finetune_mod.py", line 1300, in <module>
+    main()
+  File "/home/mexposit/cg/gea/transformers/trans_utils/run_finetune_mod.py", line 1115, in main
+    global_step, tr_loss = train(args, train_dataset, model, tokenizer)
+  File "/home/mexposit/cg/gea/transformers/trans_utils/run_finetune_mod.py", line 307, in train
+    results = evaluate(args, model, tokenizer)
+  File "/home/mexposit/cg/gea/transformers/trans_utils/run_finetune_mod.py", line 461, in evaluate
+    result = compute_metrics(eval_task, preds, out_label_ids, probs)
+  File "/home/mexposit/cg/gea/dnabert/src/transformers/data/metrics/__init__.py", line 157, in glue_compute_metrics
+    return acc_f1_mcc_auc_pre_rec_top10(preds, labels, probs)
+  File "/home/mexposit/cg/gea/dnabert/src/transformers/data/metrics/__init__.py", line 120, in acc_f1_mcc_auc_pre_rec_top10
+    auc = roc_auc_score(labels, probs, average="macro", multi_class="ovo")
+  File "/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/sklearn/metrics/_ranking.py", line 538, in roc_auc_score
+    multi_class, average, sample_weight)
+  File "/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/sklearn/metrics/_ranking.py", line 595, in _multiclass_roc_auc_score
+    if not np.allclose(1, y_score.sum(axis=1)):
+  File "/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/numpy/core/_methods.py", line 47, in _sum
+    return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+numpy.AxisError: axis 1 is out of bounds for array of dimension 1
