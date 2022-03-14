@@ -1,5 +1,7 @@
 # GEA
 
+Training data should be in data/ folder, but we cannot share data freely so we don't have a download link to put it on. The processed data can be found on the directory for every model.
+
 Installing the environment:
 
 ```
@@ -42,7 +44,7 @@ unzip 6-new-12w-0.zip
 ```
 
 
-TODO: Include links to download the successfully finetuned models.
+TODO: Include links to download the successfully finetuned models. AN option would be writing a script do download them with wget, but not sure if this works with google drive...
 
 
 Adding environments to jupyter notebook
