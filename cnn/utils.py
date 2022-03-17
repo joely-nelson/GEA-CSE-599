@@ -47,8 +47,8 @@ def load_data_train():
         NOTE: labels[i] will correspond to seqs[i]
     '''
     # import data
-    df_train_values = pd.read_csv('data/train_values.csv')
-    df_train_labels = pd.read_csv('data/train_labels.csv')
+    df_train_values = pd.read_csv('../data/train_values.csv')
+    df_train_labels = pd.read_csv('../data/train_labels.csv')
 
     # merge just to make sure that every label corresponds to the correct
     # sequence

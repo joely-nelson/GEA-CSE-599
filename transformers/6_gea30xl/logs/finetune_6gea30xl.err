@@ -1870,3 +1870,1240 @@ Consider using one of the following signatures instead:
 Iteration:  47%|████▋     | 110/232 [19:38:55<42:46:56, 1262.43s/it][A
 Iteration:  48%|████▊     | 111/232 [19:44:13<32:54:05, 978.89s/it] [A
 Iteration:  48%|████▊     | 112/232 [19:49:35<26:04:05, 782.05s/it][A
+Iteration:  49%|████▊     | 113/232 [19:54:59<21:18:27, 644.60s/it][A
+Iteration:  49%|████▉     | 114/232 [20:00:21<17:57:03, 547.65s/it][A
+Iteration:  50%|████▉     | 115/232 [20:05:45<15:37:27, 480.75s/it][A
+Iteration:  50%|█████     | 116/232 [20:11:07<13:57:05, 432.98s/it][A
+Iteration:  50%|█████     | 117/232 [20:16:32<12:47:45, 400.57s/it][A
+Iteration:  51%|█████     | 118/232 [20:21:56<11:57:23, 377.58s/it][A
+Iteration:  51%|█████▏    | 119/232 [20:27:18<11:19:59, 361.06s/it][A03/14/2022 02:44:47 - INFO - __main__ -   Loading features from cached file /home/mexposit/cg/gea/transformers/6_gea30xl/in_data/cached_dev_6-new-12w-0_1024_dnagea30
+03/14/2022 02:44:48 - INFO - __main__ -   ***** Running evaluation  *****
+03/14/2022 02:44:48 - INFO - __main__ -     Num examples = 990
+03/14/2022 02:44:48 - INFO - __main__ -     Batch size = 32
+
+
+Evaluating:   0%|          | 0/31 [00:00<?, ?it/s][A[A
+
+Evaluating:   3%|▎         | 1/31 [01:36<48:27, 96.93s/it][A[A
+
+Evaluating:   6%|▋         | 2/31 [03:13<46:47, 96.81s/it][A[A
+
+Evaluating:  10%|▉         | 3/31 [04:50<45:13, 96.91s/it][A[A
+
+Evaluating:  13%|█▎        | 4/31 [06:27<43:36, 96.91s/it][A[A
+
+Evaluating:  16%|█▌        | 5/31 [08:04<41:59, 96.91s/it][A[A
+
+Evaluating:  19%|█▉        | 6/31 [09:41<40:22, 96.90s/it][A[A
+
+Evaluating:  23%|██▎       | 7/31 [11:18<38:46, 96.94s/it][A[A
+
+Evaluating:  26%|██▌       | 8/31 [12:55<37:07, 96.85s/it][A[A
+
+Evaluating:  29%|██▉       | 9/31 [14:31<35:26, 96.65s/it][A[A
+
+Evaluating:  32%|███▏      | 10/31 [16:07<33:49, 96.63s/it][A[A
+
+Evaluating:  35%|███▌      | 11/31 [17:44<32:12, 96.64s/it][A[A
+
+Evaluating:  39%|███▊      | 12/31 [19:21<30:38, 96.76s/it][A[A
+
+Evaluating:  42%|████▏     | 13/31 [20:58<29:02, 96.80s/it][A[A
+
+Evaluating:  45%|████▌     | 14/31 [22:35<27:26, 96.87s/it][A[A
+
+Evaluating:  48%|████▊     | 15/31 [24:12<25:49, 96.83s/it][A[A
+
+Evaluating:  52%|█████▏    | 16/31 [25:48<24:11, 96.76s/it][A[A
+
+Evaluating:  55%|█████▍    | 17/31 [27:25<22:34, 96.77s/it][A[A
+
+Evaluating:  58%|█████▊    | 18/31 [29:02<20:58, 96.80s/it][A[A
+
+Evaluating:  61%|██████▏   | 19/31 [30:39<19:22, 96.83s/it][A[A
+
+Evaluating:  65%|██████▍   | 20/31 [32:18<17:53, 97.61s/it][A[A
+
+Evaluating:  68%|██████▊   | 21/31 [33:58<16:22, 98.20s/it][A[A
+
+Evaluating:  71%|███████   | 22/31 [35:37<14:46, 98.55s/it][A[A
+
+Evaluating:  74%|███████▍  | 23/31 [37:16<13:09, 98.69s/it][A[A
+
+Evaluating:  77%|███████▋  | 24/31 [38:54<11:28, 98.34s/it][A[A
+
+Evaluating:  81%|████████  | 25/31 [40:31<09:47, 97.88s/it][A[A
+
+Evaluating:  84%|████████▍ | 26/31 [42:07<08:07, 97.55s/it][A[A
+
+Evaluating:  87%|████████▋ | 27/31 [43:44<06:29, 97.36s/it][A[A
+
+Evaluating:  90%|█████████ | 28/31 [45:21<04:51, 97.10s/it][A[A
+
+Evaluating:  94%|█████████▎| 29/31 [46:58<03:13, 97.00s/it][A[A
+
+Evaluating:  97%|█████████▋| 30/31 [48:34<01:36, 96.88s/it][A[A
+
+Evaluating: 100%|██████████| 31/31 [50:07<00:00, 95.66s/it][A[AEvaluating: 100%|██████████| 31/31 [50:07<00:00, 97.02s/it]
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+03/14/2022 03:34:56 - INFO - __main__ -   ***** Eval results  *****
+03/14/2022 03:34:56 - INFO - __main__ -     acc = 0.20202020202020202
+03/14/2022 03:34:56 - INFO - __main__ -     auc = 0.8062653705286935
+03/14/2022 03:34:56 - INFO - __main__ -     f1 = 0.13300749118820102
+03/14/2022 03:34:56 - INFO - __main__ -     mcc = 0.18419472924434419
+03/14/2022 03:34:56 - INFO - __main__ -     precision = 0.11505941268602667
+03/14/2022 03:34:56 - INFO - __main__ -     recall = 0.20202020202020202
+03/14/2022 03:34:56 - INFO - __main__ -     top10acc = 0.7262626262626263
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+03/14/2022 03:34:56 - INFO - transformers.configuration_utils -   Configuration saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-120/config.json
+03/14/2022 03:34:57 - INFO - transformers.modeling_utils -   Model weights saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-120/pytorch_model.bin
+03/14/2022 03:34:57 - INFO - __main__ -   Saving model checkpoint to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-120
+03/14/2022 03:34:59 - INFO - __main__ -   Saving optimizer and scheduler states to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-120
+
+Iteration:  52%|█████▏    | 120/232 [21:22:54<38:59:44, 1253.43s/it][A
+Iteration:  52%|█████▏    | 121/232 [21:28:09<29:57:56, 971.86s/it] [A
+Iteration:  53%|█████▎    | 122/232 [21:33:31<23:44:45, 777.14s/it][A
+Iteration:  53%|█████▎    | 123/232 [21:38:59<19:26:33, 642.14s/it][A
+Iteration:  53%|█████▎    | 124/232 [21:44:31<16:28:43, 549.29s/it][A
+Iteration:  54%|█████▍    | 125/232 [21:49:55<14:19:01, 481.70s/it][A
+Iteration:  54%|█████▍    | 126/232 [21:55:18<12:46:57, 434.13s/it][A
+Iteration:  55%|█████▍    | 127/232 [22:00:42<11:41:31, 400.87s/it][A
+Iteration:  55%|█████▌    | 128/232 [22:06:06<10:55:12, 378.00s/it][A
+Iteration:  56%|█████▌    | 129/232 [22:11:29<10:20:36, 361.52s/it][A03/14/2022 04:29:02 - INFO - __main__ -   Loading features from cached file /home/mexposit/cg/gea/transformers/6_gea30xl/in_data/cached_dev_6-new-12w-0_1024_dnagea30
+03/14/2022 04:29:03 - INFO - __main__ -   ***** Running evaluation  *****
+03/14/2022 04:29:03 - INFO - __main__ -     Num examples = 990
+03/14/2022 04:29:03 - INFO - __main__ -     Batch size = 32
+
+
+Evaluating:   0%|          | 0/31 [00:00<?, ?it/s][A[A
+
+Evaluating:   3%|▎         | 1/31 [01:36<48:25, 96.85s/it][A[A
+
+Evaluating:   6%|▋         | 2/31 [03:13<46:44, 96.71s/it][A[A
+
+Evaluating:  10%|▉         | 3/31 [04:50<45:08, 96.73s/it][A[A
+
+Evaluating:  13%|█▎        | 4/31 [06:27<43:32, 96.76s/it][A[A
+
+Evaluating:  16%|█▌        | 5/31 [08:03<41:55, 96.74s/it][A[A
+
+Evaluating:  19%|█▉        | 6/31 [09:40<40:18, 96.76s/it][A[A
+
+Evaluating:  23%|██▎       | 7/31 [11:17<38:42, 96.79s/it][A[A
+
+Evaluating:  26%|██▌       | 8/31 [12:53<37:04, 96.72s/it][A[A
+
+Evaluating:  29%|██▉       | 9/31 [14:30<35:24, 96.59s/it][A[A
+
+Evaluating:  32%|███▏      | 10/31 [16:07<33:49, 96.66s/it][A[A
+
+Evaluating:  35%|███▌      | 11/31 [17:43<32:11, 96.59s/it][A[A
+
+Evaluating:  39%|███▊      | 12/31 [19:20<30:36, 96.68s/it][A[A
+
+Evaluating:  42%|████▏     | 13/31 [20:57<29:01, 96.74s/it][A[A
+
+Evaluating:  45%|████▌     | 14/31 [22:33<27:24, 96.72s/it][A[A
+
+Evaluating:  48%|████▊     | 15/31 [24:10<25:47, 96.74s/it][A[A
+
+Evaluating:  52%|█████▏    | 16/31 [25:47<24:10, 96.68s/it][A[A
+
+Evaluating:  55%|█████▍    | 17/31 [27:23<22:33, 96.68s/it][A[A
+
+Evaluating:  58%|█████▊    | 18/31 [29:00<20:57, 96.74s/it][A[A
+
+Evaluating:  61%|██████▏   | 19/31 [30:39<19:28, 97.38s/it][A[A
+
+Evaluating:  65%|██████▍   | 20/31 [32:18<17:56, 97.90s/it][A[A
+
+Evaluating:  68%|██████▊   | 21/31 [33:57<16:22, 98.25s/it][A[A
+
+Evaluating:  71%|███████   | 22/31 [35:37<14:46, 98.52s/it][A[A
+
+Evaluating:  74%|███████▍  | 23/31 [37:16<13:09, 98.67s/it][A[A
+
+Evaluating:  77%|███████▋  | 24/31 [38:52<11:26, 98.10s/it][A[A
+
+Evaluating:  81%|████████  | 25/31 [40:29<09:46, 97.71s/it][A[A
+
+Evaluating:  84%|████████▍ | 26/31 [42:06<08:07, 97.41s/it][A[A
+
+Evaluating:  87%|████████▋ | 27/31 [43:43<06:29, 97.33s/it][A[A
+
+Evaluating:  90%|█████████ | 28/31 [45:20<04:51, 97.14s/it][A[A
+
+Evaluating:  94%|█████████▎| 29/31 [46:56<03:13, 97.00s/it][A[A
+
+Evaluating:  97%|█████████▋| 30/31 [48:33<01:36, 96.87s/it][A[A
+
+Evaluating: 100%|██████████| 31/31 [50:04<00:00, 95.06s/it][A[AEvaluating: 100%|██████████| 31/31 [50:04<00:00, 96.91s/it]
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+03/14/2022 05:19:07 - INFO - __main__ -   ***** Eval results  *****
+03/14/2022 05:19:07 - INFO - __main__ -     acc = 0.23030303030303031
+03/14/2022 05:19:07 - INFO - __main__ -     auc = 0.8302249242688114
+03/14/2022 05:19:07 - INFO - __main__ -     f1 = 0.17035109562911094
+03/14/2022 05:19:07 - INFO - __main__ -     mcc = 0.21370713207228795
+03/14/2022 05:19:07 - INFO - __main__ -     precision = 0.25940522044045683
+03/14/2022 05:19:07 - INFO - __main__ -     recall = 0.2303030303030303
+03/14/2022 05:19:07 - INFO - __main__ -     top10acc = 0.7818181818181819
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+03/14/2022 05:19:07 - INFO - transformers.configuration_utils -   Configuration saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-130/config.json
+03/14/2022 05:19:08 - INFO - transformers.modeling_utils -   Model weights saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-130/pytorch_model.bin
+03/14/2022 05:19:08 - INFO - __main__ -   Saving model checkpoint to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-130
+03/14/2022 05:19:10 - INFO - __main__ -   Saving optimizer and scheduler states to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-130
+
+Iteration:  56%|█████▌    | 130/232 [23:07:05<35:31:27, 1253.80s/it][A
+Iteration:  56%|█████▋    | 131/232 [23:12:25<27:18:49, 973.56s/it] [A
+Iteration:  57%|█████▋    | 132/232 [23:17:44<21:35:19, 777.19s/it][A
+Iteration:  57%|█████▋    | 133/232 [23:23:11<17:39:28, 642.11s/it][A
+Iteration:  58%|█████▊    | 134/232 [23:28:45<14:57:41, 549.61s/it][A
+Iteration:  58%|█████▊    | 135/232 [23:34:09<12:59:18, 482.05s/it][A
+Iteration:  59%|█████▊    | 136/232 [23:39:32<11:34:47, 434.25s/it][A
+Iteration:  59%|█████▉    | 137/232 [23:44:39<10:27:04, 396.05s/it][A
+Iteration:  59%|█████▉    | 138/232 [23:49:52<9:41:43, 371.31s/it] [A
+Iteration:  60%|█████▉    | 139/232 [23:54:54<9:03:08, 350.42s/it][A03/14/2022 06:12:30 - INFO - __main__ -   Loading features from cached file /home/mexposit/cg/gea/transformers/6_gea30xl/in_data/cached_dev_6-new-12w-0_1024_dnagea30
+03/14/2022 06:12:30 - INFO - __main__ -   ***** Running evaluation  *****
+03/14/2022 06:12:30 - INFO - __main__ -     Num examples = 990
+03/14/2022 06:12:30 - INFO - __main__ -     Batch size = 32
+
+
+Evaluating:   0%|          | 0/31 [00:00<?, ?it/s][A[A
+
+Evaluating:   3%|▎         | 1/31 [01:31<45:35, 91.17s/it][A[A
+
+Evaluating:   6%|▋         | 2/31 [03:01<43:56, 90.90s/it][A[A
+
+Evaluating:  10%|▉         | 3/31 [04:32<42:27, 90.99s/it][A[A
+
+Evaluating:  13%|█▎        | 4/31 [06:03<40:55, 90.96s/it][A[A
+
+Evaluating:  16%|█▌        | 5/31 [07:40<40:21, 93.13s/it][A[A
+
+Evaluating:  19%|█▉        | 6/31 [09:19<39:31, 94.88s/it][A[A
+
+Evaluating:  23%|██▎       | 7/31 [10:56<38:16, 95.69s/it][A[A
+
+Evaluating:  26%|██▌       | 8/31 [12:34<36:59, 96.50s/it][A[A
+
+Evaluating:  29%|██▉       | 9/31 [14:08<35:04, 95.67s/it][A[A
+
+Evaluating:  32%|███▏      | 10/31 [15:46<33:44, 96.42s/it][A[A
+
+Evaluating:  35%|███▌      | 11/31 [17:23<32:09, 96.45s/it][A[A
+
+Evaluating:  39%|███▊      | 12/31 [18:54<30:02, 94.88s/it][A[A
+
+Evaluating:  42%|████▏     | 13/31 [20:25<28:07, 93.76s/it][A[A
+
+Evaluating:  45%|████▌     | 14/31 [21:56<26:20, 92.95s/it][A[A
+
+Evaluating:  48%|████▊     | 15/31 [23:27<24:37, 92.31s/it][A[A
+
+Evaluating:  52%|█████▏    | 16/31 [24:58<22:58, 91.91s/it][A[A
+
+Evaluating:  55%|█████▍    | 17/31 [26:35<21:47, 93.37s/it][A[A
+
+Evaluating:  58%|█████▊    | 18/31 [28:14<20:36, 95.15s/it][A[A
+
+Evaluating:  61%|██████▏   | 19/31 [29:53<19:14, 96.18s/it][A[A
+
+Evaluating:  65%|██████▍   | 20/31 [31:27<17:30, 95.52s/it][A[A
+
+Evaluating:  68%|██████▊   | 21/31 [33:02<15:53, 95.38s/it][A[A
+
+Evaluating:  71%|███████   | 22/31 [34:37<14:18, 95.42s/it][A[A
+
+Evaluating:  74%|███████▍  | 23/31 [36:16<12:51, 96.42s/it][A[A
+
+Evaluating:  77%|███████▋  | 24/31 [37:57<11:23, 97.70s/it][A[A
+
+Evaluating:  81%|████████  | 25/31 [39:39<09:54, 99.13s/it][A[A
+
+Evaluating:  84%|████████▍ | 26/31 [41:22<08:20, 100.13s/it][A[A
+
+Evaluating:  87%|████████▋ | 27/31 [43:04<06:43, 100.87s/it][A[A
+
+Evaluating:  90%|█████████ | 28/31 [44:47<05:04, 101.34s/it][A[A
+
+Evaluating:  94%|█████████▎| 29/31 [46:29<03:23, 101.60s/it][A[A
+
+Evaluating:  97%|█████████▋| 30/31 [48:11<01:41, 101.73s/it][A[A
+
+Evaluating: 100%|██████████| 31/31 [49:47<00:00, 100.04s/it][A[AEvaluating: 100%|██████████| 31/31 [49:47<00:00, 96.37s/it] 
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+03/14/2022 07:02:18 - INFO - __main__ -   ***** Eval results  *****
+03/14/2022 07:02:18 - INFO - __main__ -     acc = 0.22121212121212122
+03/14/2022 07:02:18 - INFO - __main__ -     auc = 0.8282617185438501
+03/14/2022 07:02:18 - INFO - __main__ -     f1 = 0.15876766490554467
+03/14/2022 07:02:18 - INFO - __main__ -     mcc = 0.20731703273938387
+03/14/2022 07:02:18 - INFO - __main__ -     precision = 0.20599902816047524
+03/14/2022 07:02:18 - INFO - __main__ -     recall = 0.22121212121212122
+03/14/2022 07:02:18 - INFO - __main__ -     top10acc = 0.7626262626262627
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+03/14/2022 07:02:18 - INFO - transformers.configuration_utils -   Configuration saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-140/config.json
+03/14/2022 07:02:19 - INFO - transformers.modeling_utils -   Model weights saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-140/pytorch_model.bin
+03/14/2022 07:02:19 - INFO - __main__ -   Saving model checkpoint to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-140
+03/14/2022 07:02:21 - INFO - __main__ -   Saving optimizer and scheduler states to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-140
+
+Iteration:  60%|██████    | 140/232 [24:50:16<31:44:22, 1241.99s/it][A
+Iteration:  61%|██████    | 141/232 [24:55:56<24:33:01, 971.22s/it] [A
+Iteration:  61%|██████    | 142/232 [25:01:37<19:33:28, 782.32s/it][A
+Iteration:  62%|██████▏   | 143/232 [25:07:17<16:03:45, 649.72s/it][A
+Iteration:  62%|██████▏   | 144/232 [25:12:58<13:37:00, 557.05s/it][A
+Iteration:  62%|██████▎   | 145/232 [25:18:38<11:53:06, 491.80s/it][A
+Iteration:  63%|██████▎   | 146/232 [25:24:07<10:34:47, 442.87s/it][A
+Iteration:  63%|██████▎   | 147/232 [25:29:29<9:36:11, 406.72s/it] [A
+Iteration:  64%|██████▍   | 148/232 [25:34:57<8:56:16, 383.05s/it][A
+Iteration:  64%|██████▍   | 149/232 [25:40:17<8:23:43, 364.13s/it][A03/14/2022 07:57:41 - INFO - __main__ -   Loading features from cached file /home/mexposit/cg/gea/transformers/6_gea30xl/in_data/cached_dev_6-new-12w-0_1024_dnagea30
+03/14/2022 07:57:42 - INFO - __main__ -   ***** Running evaluation  *****
+03/14/2022 07:57:42 - INFO - __main__ -     Num examples = 990
+03/14/2022 07:57:42 - INFO - __main__ -     Batch size = 32
+
+
+Evaluating:   0%|          | 0/31 [00:00<?, ?it/s][A[A
+
+Evaluating:   3%|▎         | 1/31 [01:36<48:21, 96.71s/it][A[A
+
+Evaluating:   6%|▋         | 2/31 [03:13<46:44, 96.71s/it][A[A
+
+Evaluating:  10%|▉         | 3/31 [04:50<45:08, 96.72s/it][A[A
+
+Evaluating:  13%|█▎        | 4/31 [06:26<43:31, 96.74s/it][A[A
+
+Evaluating:  16%|█▌        | 5/31 [08:03<41:54, 96.73s/it][A[A
+
+Evaluating:  19%|█▉        | 6/31 [09:40<40:17, 96.69s/it][A[A
+
+Evaluating:  23%|██▎       | 7/31 [11:16<38:39, 96.67s/it][A[A
+
+Evaluating:  26%|██▌       | 8/31 [12:53<37:01, 96.61s/it][A[A
+
+Evaluating:  29%|██▉       | 9/31 [14:29<35:21, 96.45s/it][A[A
+
+Evaluating:  32%|███▏      | 10/31 [16:06<33:47, 96.53s/it][A[A
+
+Evaluating:  35%|███▌      | 11/31 [17:42<32:09, 96.48s/it][A[A
+
+Evaluating:  39%|███▊      | 12/31 [19:19<30:35, 96.60s/it][A[A
+
+Evaluating:  42%|████▏     | 13/31 [20:56<29:00, 96.72s/it][A[A
+
+Evaluating:  45%|████▌     | 14/31 [22:33<27:24, 96.73s/it][A[A
+
+Evaluating:  48%|████▊     | 15/31 [24:11<25:56, 97.31s/it][A[A
+
+Evaluating:  52%|█████▏    | 16/31 [25:49<24:20, 97.40s/it][A[A
+
+Evaluating:  55%|█████▍    | 17/31 [27:25<22:40, 97.16s/it][A[A
+
+Evaluating:  58%|█████▊    | 18/31 [29:02<21:01, 97.06s/it][A[A
+
+Evaluating:  61%|██████▏   | 19/31 [30:39<19:24, 97.01s/it][A[A
+
+Evaluating:  65%|██████▍   | 20/31 [32:19<17:55, 97.76s/it][A[A
+
+Evaluating:  68%|██████▊   | 21/31 [33:55<16:14, 97.44s/it][A[A
+
+Evaluating:  71%|███████   | 22/31 [35:32<14:34, 97.18s/it][A[A
+
+Evaluating:  74%|███████▍  | 23/31 [37:13<13:05, 98.24s/it][A[A
+
+Evaluating:  77%|███████▋  | 24/31 [38:50<11:25, 97.98s/it][A[A
+
+Evaluating:  81%|████████  | 25/31 [40:27<09:45, 97.63s/it][A[A
+
+Evaluating:  84%|████████▍ | 26/31 [42:04<08:06, 97.33s/it][A[A
+
+Evaluating:  87%|████████▋ | 27/31 [43:41<06:29, 97.41s/it][A[A
+
+Evaluating:  90%|█████████ | 28/31 [45:22<04:54, 98.31s/it][A[A
+
+Evaluating:  94%|█████████▎| 29/31 [47:00<03:17, 98.50s/it][A[A
+
+Evaluating:  97%|█████████▋| 30/31 [48:40<01:38, 98.85s/it][A[A
+
+Evaluating: 100%|██████████| 31/31 [50:11<00:00, 96.46s/it][A[AEvaluating: 100%|██████████| 31/31 [50:11<00:00, 97.15s/it]
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+03/14/2022 08:47:54 - INFO - __main__ -   ***** Eval results  *****
+03/14/2022 08:47:54 - INFO - __main__ -     acc = 0.2515151515151515
+03/14/2022 08:47:54 - INFO - __main__ -     auc = 0.8455178746714797
+03/14/2022 08:47:54 - INFO - __main__ -     f1 = 0.1885054091582839
+03/14/2022 08:47:54 - INFO - __main__ -     mcc = 0.2328621519350652
+03/14/2022 08:47:54 - INFO - __main__ -     precision = 0.19718408333285378
+03/14/2022 08:47:54 - INFO - __main__ -     recall = 0.2515151515151515
+03/14/2022 08:47:54 - INFO - __main__ -     top10acc = 0.8202020202020202
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+03/14/2022 08:47:54 - INFO - transformers.configuration_utils -   Configuration saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-150/config.json
+03/14/2022 08:47:54 - INFO - transformers.modeling_utils -   Model weights saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-150/pytorch_model.bin
+03/14/2022 08:47:54 - INFO - __main__ -   Saving model checkpoint to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-150
+03/14/2022 08:47:57 - INFO - __main__ -   Saving optimizer and scheduler states to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-150
+
+Iteration:  65%|██████▍   | 150/232 [26:35:51<28:35:37, 1255.34s/it][A
+Iteration:  65%|██████▌   | 151/232 [26:41:12<21:55:55, 974.76s/it] [A
+Iteration:  66%|██████▌   | 152/232 [26:46:36<17:19:38, 779.74s/it][A
+Iteration:  66%|██████▌   | 153/232 [26:52:05<14:08:37, 644.53s/it][A
+Iteration:  66%|██████▋   | 154/232 [26:57:36<11:55:33, 550.43s/it][A
+Iteration:  67%|██████▋   | 155/232 [27:03:01<10:19:38, 482.84s/it][A
+Iteration:  67%|██████▋   | 156/232 [27:08:23<9:10:19, 434.47s/it] [A
+Iteration:  68%|██████▊   | 157/232 [27:13:48<8:22:07, 401.70s/it][A
+Iteration:  68%|██████▊   | 158/232 [27:19:16<7:48:16, 379.68s/it][A
+Iteration:  69%|██████▊   | 159/232 [27:24:46<7:23:35, 364.60s/it][A03/14/2022 09:42:19 - INFO - __main__ -   Loading features from cached file /home/mexposit/cg/gea/transformers/6_gea30xl/in_data/cached_dev_6-new-12w-0_1024_dnagea30
+03/14/2022 09:42:19 - INFO - __main__ -   ***** Running evaluation  *****
+03/14/2022 09:42:19 - INFO - __main__ -     Num examples = 990
+03/14/2022 09:42:19 - INFO - __main__ -     Batch size = 32
+
+
+Evaluating:   0%|          | 0/31 [00:00<?, ?it/s][A[A
+
+Evaluating:   3%|▎         | 1/31 [01:38<49:26, 98.89s/it][A[A
+
+Evaluating:   6%|▋         | 2/31 [03:17<47:46, 98.83s/it][A[A
+
+Evaluating:  10%|▉         | 3/31 [04:56<46:06, 98.80s/it][A[A
+
+Evaluating:  13%|█▎        | 4/31 [06:35<44:28, 98.82s/it][A[A
+
+Evaluating:  16%|█▌        | 5/31 [08:13<42:47, 98.75s/it][A[A
+
+Evaluating:  19%|█▉        | 6/31 [09:52<41:08, 98.76s/it][A[A
+
+Evaluating:  23%|██▎       | 7/31 [11:31<39:32, 98.86s/it][A[A
+
+Evaluating:  26%|██▌       | 8/31 [13:10<37:52, 98.80s/it][A[A
+
+Evaluating:  29%|██▉       | 9/31 [14:48<36:09, 98.60s/it][A[A
+
+Evaluating:  32%|███▏      | 10/31 [16:27<34:32, 98.70s/it][A[A
+
+Evaluating:  35%|███▌      | 11/31 [18:05<32:51, 98.59s/it][A[A
+
+Evaluating:  39%|███▊      | 12/31 [19:44<31:15, 98.69s/it][A[A
+
+Evaluating:  42%|████▏     | 13/31 [21:23<29:36, 98.71s/it][A[A
+
+Evaluating:  45%|████▌     | 14/31 [23:02<27:58, 98.75s/it][A[A
+
+Evaluating:  48%|████▊     | 15/31 [24:41<26:19, 98.74s/it][A[A
+
+Evaluating:  52%|█████▏    | 16/31 [26:19<24:40, 98.67s/it][A[A
+
+Evaluating:  55%|█████▍    | 17/31 [27:58<23:02, 98.72s/it][A[A
+
+Evaluating:  58%|█████▊    | 18/31 [29:37<21:24, 98.80s/it][A[A
+
+Evaluating:  61%|██████▏   | 19/31 [31:16<19:46, 98.85s/it][A[A
+
+Evaluating:  65%|██████▍   | 20/31 [32:55<18:07, 98.83s/it][A[A
+
+Evaluating:  68%|██████▊   | 21/31 [34:33<16:27, 98.76s/it][A[A
+
+Evaluating:  71%|███████   | 22/31 [36:12<14:48, 98.76s/it][A[A
+
+Evaluating:  74%|███████▍  | 23/31 [37:50<13:09, 98.66s/it][A[A
+
+Evaluating:  77%|███████▋  | 24/31 [39:29<11:30, 98.71s/it][A[A
+
+Evaluating:  81%|████████  | 25/31 [41:08<09:52, 98.71s/it][A[A
+
+Evaluating:  84%|████████▍ | 26/31 [42:47<08:13, 98.73s/it][A[A
+
+Evaluating:  87%|████████▋ | 27/31 [44:26<06:35, 98.81s/it][A[A
+
+Evaluating:  90%|█████████ | 28/31 [46:05<04:56, 98.82s/it][A[A
+
+Evaluating:  94%|█████████▎| 29/31 [47:43<03:17, 98.80s/it][A[A
+
+Evaluating:  97%|█████████▋| 30/31 [49:22<01:38, 98.72s/it][A[A
+
+Evaluating: 100%|██████████| 31/31 [50:54<00:00, 96.88s/it][A[AEvaluating: 100%|██████████| 31/31 [50:54<00:00, 98.55s/it]
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+03/14/2022 10:33:15 - INFO - __main__ -   ***** Eval results  *****
+03/14/2022 10:33:15 - INFO - __main__ -     acc = 0.2878787878787879
+03/14/2022 10:33:15 - INFO - __main__ -     auc = 0.856749311294766
+03/14/2022 10:33:15 - INFO - __main__ -     f1 = 0.2332577658047922
+03/14/2022 10:33:15 - INFO - __main__ -     mcc = 0.2682420011811037
+03/14/2022 10:33:15 - INFO - __main__ -     precision = 0.281696925475597
+03/14/2022 10:33:15 - INFO - __main__ -     recall = 0.2878787878787879
+03/14/2022 10:33:15 - INFO - __main__ -     top10acc = 0.8121212121212121
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+03/14/2022 10:33:15 - INFO - transformers.configuration_utils -   Configuration saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-160/config.json
+03/14/2022 10:33:16 - INFO - transformers.modeling_utils -   Model weights saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-160/pytorch_model.bin
+03/14/2022 10:33:16 - INFO - __main__ -   Saving model checkpoint to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-160
+03/14/2022 10:33:18 - INFO - __main__ -   Saving optimizer and scheduler states to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-160
+
+Iteration:  69%|██████▉   | 160/232 [28:21:13<25:25:32, 1271.28s/it][A
+Iteration:  69%|██████▉   | 161/232 [28:26:39<19:28:52, 987.78s/it] [A
+Iteration:  70%|██████▉   | 162/232 [28:32:05<15:20:42, 789.18s/it][A
+Iteration:  70%|███████   | 163/232 [28:37:31<12:27:57, 650.40s/it][A
+Iteration:  71%|███████   | 164/232 [28:43:00<10:27:38, 553.80s/it][A
+Iteration:  71%|███████   | 165/232 [28:48:27<9:02:35, 485.90s/it] [A
+Iteration:  72%|███████▏  | 166/232 [28:53:55<8:02:23, 438.53s/it][A
+Iteration:  72%|███████▏  | 167/232 [28:59:26<7:19:57, 406.11s/it][A
+Iteration:  72%|███████▏  | 168/232 [29:04:53<6:47:56, 382.44s/it][A
+Iteration:  73%|███████▎  | 169/232 [29:10:22<6:24:53, 366.56s/it][A03/14/2022 11:27:56 - INFO - __main__ -   Loading features from cached file /home/mexposit/cg/gea/transformers/6_gea30xl/in_data/cached_dev_6-new-12w-0_1024_dnagea30
+03/14/2022 11:27:57 - INFO - __main__ -   ***** Running evaluation  *****
+03/14/2022 11:27:57 - INFO - __main__ -     Num examples = 990
+03/14/2022 11:27:57 - INFO - __main__ -     Batch size = 32
+
+
+Evaluating:   0%|          | 0/31 [00:00<?, ?it/s][A[A
+
+Evaluating:   3%|▎         | 1/31 [01:39<49:40, 99.35s/it][A[A
+
+Evaluating:   6%|▋         | 2/31 [03:18<48:04, 99.45s/it][A[A
+
+Evaluating:  10%|▉         | 3/31 [04:58<46:22, 99.38s/it][A[A
+
+Evaluating:  13%|█▎        | 4/31 [06:37<44:44, 99.42s/it][A[A
+
+Evaluating:  16%|█▌        | 5/31 [08:16<43:02, 99.34s/it][A[A
+
+Evaluating:  19%|█▉        | 6/31 [09:56<41:22, 99.28s/it][A[A
+
+Evaluating:  23%|██▎       | 7/31 [11:35<39:44, 99.34s/it][A[A
+
+Evaluating:  26%|██▌       | 8/31 [13:14<38:02, 99.25s/it][A[A
+
+Evaluating:  29%|██▉       | 9/31 [14:53<36:20, 99.13s/it][A[A
+
+Evaluating:  32%|███▏      | 10/31 [16:32<34:42, 99.18s/it][A[A
+
+Evaluating:  35%|███▌      | 11/31 [18:11<33:03, 99.15s/it][A[A
+
+Evaluating:  39%|███▊      | 12/31 [19:51<31:26, 99.27s/it][A[A
+
+Evaluating:  42%|████▏     | 13/31 [21:30<29:48, 99.35s/it][A[A
+
+Evaluating:  45%|████▌     | 14/31 [23:10<28:09, 99.36s/it][A[A
+
+Evaluating:  48%|████▊     | 15/31 [24:49<26:29, 99.32s/it][A[A
+
+Evaluating:  52%|█████▏    | 16/31 [26:28<24:48, 99.23s/it][A[A
+
+Evaluating:  55%|█████▍    | 17/31 [28:07<23:09, 99.24s/it][A[A
+
+Evaluating:  58%|█████▊    | 18/31 [29:47<21:31, 99.33s/it][A[A
+
+Evaluating:  61%|██████▏   | 19/31 [31:26<19:53, 99.44s/it][A[A
+
+Evaluating:  65%|██████▍   | 20/31 [33:06<18:13, 99.41s/it][A[A
+
+Evaluating:  68%|██████▊   | 21/31 [34:45<16:33, 99.36s/it][A[A
+
+Evaluating:  71%|███████   | 22/31 [36:24<14:53, 99.31s/it][A[A
+
+Evaluating:  74%|███████▍  | 23/31 [38:03<13:13, 99.24s/it][A[A
+
+Evaluating:  77%|███████▋  | 24/31 [39:42<11:34, 99.18s/it][A[A
+
+Evaluating:  81%|████████  | 25/31 [41:22<09:55, 99.23s/it][A[A
+
+Evaluating:  84%|████████▍ | 26/31 [43:01<08:16, 99.23s/it][A[A
+
+Evaluating:  87%|████████▋ | 27/31 [44:40<06:37, 99.28s/it][A[A
+
+Evaluating:  90%|█████████ | 28/31 [46:20<04:57, 99.26s/it][A[A
+
+Evaluating:  94%|█████████▎| 29/31 [47:59<03:18, 99.30s/it][A[A
+
+Evaluating:  97%|█████████▋| 30/31 [49:38<01:39, 99.27s/it][A[A
+
+Evaluating: 100%|██████████| 31/31 [51:11<00:00, 97.43s/it][A[AEvaluating: 100%|██████████| 31/31 [51:11<00:00, 99.09s/it]
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+03/14/2022 12:19:09 - INFO - __main__ -   ***** Eval results  *****
+03/14/2022 12:19:09 - INFO - __main__ -     acc = 0.25252525252525254
+03/14/2022 12:19:09 - INFO - __main__ -     auc = 0.8409402277740836
+03/14/2022 12:19:09 - INFO - __main__ -     f1 = 0.20921390705369006
+03/14/2022 12:19:09 - INFO - __main__ -     mcc = 0.23314346884680098
+03/14/2022 12:19:09 - INFO - __main__ -     precision = 0.269171437185502
+03/14/2022 12:19:09 - INFO - __main__ -     recall = 0.2525252525252525
+03/14/2022 12:19:09 - INFO - __main__ -     top10acc = 0.7676767676767676
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+03/14/2022 12:19:09 - INFO - transformers.configuration_utils -   Configuration saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-170/config.json
+03/14/2022 12:19:10 - INFO - transformers.modeling_utils -   Model weights saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-170/pytorch_model.bin
+03/14/2022 12:19:10 - INFO - __main__ -   Saving model checkpoint to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-170
+03/14/2022 12:19:13 - INFO - __main__ -   Saving optimizer and scheduler states to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-170
+
+Iteration:  73%|███████▎  | 170/232 [30:07:07<22:00:39, 1278.06s/it][A
+Iteration:  74%|███████▎  | 171/232 [30:12:25<16:46:18, 989.81s/it] [A
+Iteration:  74%|███████▍  | 172/232 [30:17:55<13:11:57, 791.95s/it][A
+Iteration:  75%|███████▍  | 173/232 [30:23:23<10:41:56, 652.82s/it][A
+Iteration:  75%|███████▌  | 174/232 [30:28:51<8:56:45, 555.27s/it] [A
+Iteration:  75%|███████▌  | 175/232 [30:34:20<7:43:13, 487.61s/it][A
+Iteration:  76%|███████▌  | 176/232 [30:39:51<6:51:01, 440.38s/it][A
+Iteration:  76%|███████▋  | 177/232 [30:45:21<6:13:33, 407.52s/it][A
+Iteration:  77%|███████▋  | 178/232 [30:50:52<5:46:06, 384.56s/it][A
+Iteration:  77%|███████▋  | 179/232 [30:56:24<5:25:34, 368.57s/it][A03/14/2022 13:13:57 - INFO - __main__ -   Loading features from cached file /home/mexposit/cg/gea/transformers/6_gea30xl/in_data/cached_dev_6-new-12w-0_1024_dnagea30
+03/14/2022 13:13:58 - INFO - __main__ -   ***** Running evaluation  *****
+03/14/2022 13:13:58 - INFO - __main__ -     Num examples = 990
+03/14/2022 13:13:58 - INFO - __main__ -     Batch size = 32
+
+
+Evaluating:   0%|          | 0/31 [00:00<?, ?it/s][A[A
+
+Evaluating:   3%|▎         | 1/31 [01:38<49:25, 98.84s/it][A[A
+
+Evaluating:   6%|▋         | 2/31 [03:17<47:44, 98.77s/it][A[A
+
+Evaluating:  10%|▉         | 3/31 [04:56<46:07, 98.84s/it][A[A
+
+Evaluating:  13%|█▎        | 4/31 [06:35<44:27, 98.81s/it][A[A
+
+Evaluating:  16%|█▌        | 5/31 [08:14<42:48, 98.79s/it][A[A
+
+Evaluating:  19%|█▉        | 6/31 [09:52<41:10, 98.80s/it][A[A
+
+Evaluating:  23%|██▎       | 7/31 [11:31<39:32, 98.86s/it][A[A
+
+Evaluating:  26%|██▌       | 8/31 [13:10<37:52, 98.79s/it][A[A
+
+Evaluating:  29%|██▉       | 9/31 [14:48<36:10, 98.64s/it][A[A
+
+Evaluating:  32%|███▏      | 10/31 [16:27<34:32, 98.67s/it][A[A
+
+Evaluating:  35%|███▌      | 11/31 [18:06<32:52, 98.63s/it][A[A
+
+Evaluating:  39%|███▊      | 12/31 [19:45<31:16, 98.78s/it][A[A
+
+Evaluating:  42%|████▏     | 13/31 [21:23<29:37, 98.77s/it][A[A
+
+Evaluating:  45%|████▌     | 14/31 [23:02<27:59, 98.81s/it][A[A
+
+Evaluating:  48%|████▊     | 15/31 [24:41<26:21, 98.85s/it][A[A
+
+Evaluating:  52%|█████▏    | 16/31 [26:20<24:41, 98.77s/it][A[A
+
+Evaluating:  55%|█████▍    | 17/31 [27:59<23:02, 98.78s/it][A[A
+
+Evaluating:  58%|█████▊    | 18/31 [29:38<21:24, 98.81s/it][A[A
+
+Evaluating:  61%|██████▏   | 19/31 [31:17<19:46, 98.87s/it][A[A
+
+Evaluating:  65%|██████▍   | 20/31 [32:55<18:07, 98.85s/it][A[A
+
+Evaluating:  68%|██████▊   | 21/31 [34:34<16:28, 98.84s/it][A[A
+
+Evaluating:  71%|███████   | 22/31 [36:13<14:48, 98.77s/it][A[A
+
+Evaluating:  74%|███████▍  | 23/31 [37:51<13:09, 98.71s/it][A[A
+
+Evaluating:  77%|███████▋  | 24/31 [39:30<11:30, 98.68s/it][A[A
+
+Evaluating:  81%|████████  | 25/31 [41:09<09:52, 98.72s/it][A[A
+
+Evaluating:  84%|████████▍ | 26/31 [42:47<08:13, 98.73s/it][A[A
+
+Evaluating:  87%|████████▋ | 27/31 [44:26<06:35, 98.80s/it][A[A
+
+Evaluating:  90%|█████████ | 28/31 [46:05<04:56, 98.74s/it][A[A
+
+Evaluating:  94%|█████████▎| 29/31 [47:44<03:17, 98.71s/it][A[A
+
+Evaluating:  97%|█████████▋| 30/31 [49:22<01:38, 98.68s/it][A[A
+
+Evaluating: 100%|██████████| 31/31 [50:55<00:00, 96.87s/it][A[AEvaluating: 100%|██████████| 31/31 [50:55<00:00, 98.56s/it]
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+03/14/2022 14:04:54 - INFO - __main__ -   ***** Eval results  *****
+03/14/2022 14:04:54 - INFO - __main__ -     acc = 0.24343434343434345
+03/14/2022 14:04:54 - INFO - __main__ -     auc = 0.8520777260589172
+03/14/2022 14:04:54 - INFO - __main__ -     f1 = 0.20236332823789732
+03/14/2022 14:04:54 - INFO - __main__ -     mcc = 0.22406073231315388
+03/14/2022 14:04:54 - INFO - __main__ -     precision = 0.22472457415904817
+03/14/2022 14:04:54 - INFO - __main__ -     recall = 0.24343434343434345
+03/14/2022 14:04:54 - INFO - __main__ -     top10acc = 0.8101010101010101
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+03/14/2022 14:04:54 - INFO - transformers.configuration_utils -   Configuration saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-180/config.json
+03/14/2022 14:04:55 - INFO - transformers.modeling_utils -   Model weights saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-180/pytorch_model.bin
+03/14/2022 14:04:55 - INFO - __main__ -   Saving model checkpoint to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-180
+03/14/2022 14:04:57 - INFO - __main__ -   Saving optimizer and scheduler states to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-180
+
+Iteration:  78%|███████▊  | 180/232 [31:52:52<18:24:31, 1274.44s/it][A
+Iteration:  78%|███████▊  | 181/232 [31:58:14<14:00:29, 988.82s/it] [A
+Iteration:  78%|███████▊  | 182/232 [32:03:42<10:58:40, 790.42s/it][A
+Iteration:  79%|███████▉  | 183/232 [32:09:07<8:51:40, 651.04s/it] [A
+Iteration:  79%|███████▉  | 184/232 [32:14:36<7:23:23, 554.23s/it][A
+Iteration:  80%|███████▉  | 185/232 [32:20:01<6:20:22, 485.58s/it][A
+Iteration:  80%|████████  | 186/232 [32:25:25<5:35:10, 437.18s/it][A
+Iteration:  81%|████████  | 187/232 [32:30:50<5:02:37, 403.49s/it][A
+Iteration:  81%|████████  | 188/232 [32:36:15<4:38:29, 379.77s/it][A
+Iteration:  81%|████████▏ | 189/232 [32:41:40<4:20:29, 363.48s/it][A03/14/2022 14:59:10 - INFO - __main__ -   Loading features from cached file /home/mexposit/cg/gea/transformers/6_gea30xl/in_data/cached_dev_6-new-12w-0_1024_dnagea30
+03/14/2022 14:59:11 - INFO - __main__ -   ***** Running evaluation  *****
+03/14/2022 14:59:11 - INFO - __main__ -     Num examples = 990
+03/14/2022 14:59:11 - INFO - __main__ -     Batch size = 32
+
+
+Evaluating:   0%|          | 0/31 [00:00<?, ?it/s][A[A
+
+Evaluating:   3%|▎         | 1/31 [01:37<48:42, 97.41s/it][A[A
+
+Evaluating:   6%|▋         | 2/31 [03:14<47:05, 97.43s/it][A[A
+
+Evaluating:  10%|▉         | 3/31 [04:51<45:23, 97.27s/it][A[A
+
+Evaluating:  13%|█▎        | 4/31 [06:29<43:48, 97.37s/it][A[A
+
+Evaluating:  16%|█▌        | 5/31 [08:06<42:11, 97.37s/it][A[A
+
+Evaluating:  19%|█▉        | 6/31 [09:44<40:32, 97.31s/it][A[A
+
+Evaluating:  23%|██▎       | 7/31 [11:21<38:56, 97.35s/it][A[A
+
+Evaluating:  26%|██▌       | 8/31 [12:58<37:17, 97.29s/it][A[A
+
+Evaluating:  29%|██▉       | 9/31 [14:35<35:40, 97.29s/it][A[A
+
+Evaluating:  32%|███▏      | 10/31 [16:13<34:01, 97.23s/it][A[A
+
+Evaluating:  35%|███▌      | 11/31 [17:50<32:24, 97.20s/it][A[A
+
+Evaluating:  39%|███▊      | 12/31 [19:27<30:48, 97.31s/it][A[A
+
+Evaluating:  42%|████▏     | 13/31 [21:05<29:12, 97.34s/it][A[A
+
+Evaluating:  45%|████▌     | 14/31 [22:42<27:35, 97.38s/it][A[A
+
+Evaluating:  48%|████▊     | 15/31 [24:19<25:57, 97.37s/it][A[A
+
+Evaluating:  52%|█████▏    | 16/31 [25:57<24:19, 97.31s/it][A[A
+
+Evaluating:  55%|█████▍    | 17/31 [27:34<22:42, 97.31s/it][A[A
+
+Evaluating:  58%|█████▊    | 18/31 [29:11<21:05, 97.36s/it][A[A
+
+Evaluating:  61%|██████▏   | 19/31 [30:49<19:28, 97.36s/it][A[A
+
+Evaluating:  65%|██████▍   | 20/31 [32:26<17:51, 97.37s/it][A[A
+
+Evaluating:  68%|██████▊   | 21/31 [34:04<16:13, 97.39s/it][A[A
+
+Evaluating:  71%|███████   | 22/31 [35:41<14:36, 97.36s/it][A[A
+
+Evaluating:  74%|███████▍  | 23/31 [37:18<12:58, 97.32s/it][A[A
+
+Evaluating:  77%|███████▋  | 24/31 [38:55<11:20, 97.27s/it][A[A
+
+Evaluating:  81%|████████  | 25/31 [40:32<09:43, 97.23s/it][A[A
+
+Evaluating:  84%|████████▍ | 26/31 [42:10<08:06, 97.22s/it][A[A
+
+Evaluating:  87%|████████▋ | 27/31 [43:47<06:29, 97.32s/it][A[A
+
+Evaluating:  90%|█████████ | 28/31 [45:24<04:51, 97.29s/it][A[A
+
+Evaluating:  94%|█████████▎| 29/31 [47:02<03:14, 97.31s/it][A[A
+
+Evaluating:  97%|█████████▋| 30/31 [48:39<01:37, 97.20s/it][A[A
+
+Evaluating: 100%|██████████| 31/31 [50:10<00:00, 95.46s/it][A[AEvaluating: 100%|██████████| 31/31 [50:10<00:00, 97.11s/it]
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+03/14/2022 15:49:22 - INFO - __main__ -   ***** Eval results  *****
+03/14/2022 15:49:22 - INFO - __main__ -     acc = 0.2727272727272727
+03/14/2022 15:49:22 - INFO - __main__ -     auc = 0.8614230075045122
+03/14/2022 15:49:22 - INFO - __main__ -     f1 = 0.22972459964750425
+03/14/2022 15:49:22 - INFO - __main__ -     mcc = 0.2553601286546589
+03/14/2022 15:49:22 - INFO - __main__ -     precision = 0.3106308129807965
+03/14/2022 15:49:22 - INFO - __main__ -     recall = 0.2727272727272727
+03/14/2022 15:49:22 - INFO - __main__ -     top10acc = 0.8121212121212121
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+03/14/2022 15:49:22 - INFO - transformers.configuration_utils -   Configuration saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-190/config.json
+03/14/2022 15:49:23 - INFO - transformers.modeling_utils -   Model weights saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-190/pytorch_model.bin
+03/14/2022 15:49:23 - INFO - __main__ -   Saving model checkpoint to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-190
+03/14/2022 15:49:25 - INFO - __main__ -   Saving optimizer and scheduler states to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-190
+
+Iteration:  82%|████████▏ | 190/232 [33:37:20<14:39:26, 1256.34s/it][A
+Iteration:  82%|████████▏ | 191/232 [33:42:36<11:05:41, 974.19s/it] [A
+Iteration:  83%|████████▎ | 192/232 [33:47:49<8:37:20, 776.01s/it] [A
+Iteration:  83%|████████▎ | 193/232 [33:53:12<6:56:03, 640.09s/it][A
+Iteration:  84%|████████▎ | 194/232 [33:58:38<5:45:39, 545.78s/it][A
+Iteration:  84%|████████▍ | 195/232 [34:04:03<4:55:45, 479.60s/it][A
+Iteration:  84%|████████▍ | 196/232 [34:09:28<4:19:49, 433.05s/it][A
+Iteration:  85%|████████▍ | 197/232 [34:14:53<3:53:50, 400.88s/it][A
+Iteration:  85%|████████▌ | 198/232 [34:20:20<3:34:27, 378.45s/it][A
+Iteration:  86%|████████▌ | 199/232 [34:25:45<3:19:26, 362.62s/it][A03/14/2022 16:43:15 - INFO - __main__ -   Loading features from cached file /home/mexposit/cg/gea/transformers/6_gea30xl/in_data/cached_dev_6-new-12w-0_1024_dnagea30
+03/14/2022 16:43:15 - INFO - __main__ -   ***** Running evaluation  *****
+03/14/2022 16:43:15 - INFO - __main__ -     Num examples = 990
+03/14/2022 16:43:15 - INFO - __main__ -     Batch size = 32
+
+
+Evaluating:   0%|          | 0/31 [00:00<?, ?it/s][A[A
+
+Evaluating:   3%|▎         | 1/31 [01:38<49:23, 98.80s/it][A[A
+
+Evaluating:   6%|▋         | 2/31 [03:17<47:48, 98.91s/it][A[A
+
+Evaluating:  10%|▉         | 3/31 [04:56<46:08, 98.88s/it][A[A
+
+Evaluating:  13%|█▎        | 4/31 [06:35<44:32, 98.99s/it][A[A
+
+Evaluating:  16%|█▌        | 5/31 [08:14<42:51, 98.91s/it][A[A
+
+Evaluating:  19%|█▉        | 6/31 [09:53<41:11, 98.87s/it][A[A
+
+Evaluating:  23%|██▎       | 7/31 [11:32<39:33, 98.90s/it][A[A
+
+Evaluating:  26%|██▌       | 8/31 [13:10<37:52, 98.83s/it][A[A
+
+Evaluating:  29%|██▉       | 9/31 [14:49<36:11, 98.72s/it][A[A
+
+Evaluating:  32%|███▏      | 10/31 [16:28<34:32, 98.70s/it][A[A
+
+Evaluating:  35%|███▌      | 11/31 [18:06<32:52, 98.64s/it][A[A
+
+Evaluating:  39%|███▊      | 12/31 [19:45<31:16, 98.74s/it][A[A
+
+Evaluating:  42%|████▏     | 13/31 [21:24<29:37, 98.76s/it][A[A
+
+Evaluating:  45%|████▌     | 14/31 [23:03<27:59, 98.82s/it][A[A
+
+Evaluating:  48%|████▊     | 15/31 [24:42<26:21, 98.81s/it][A[A
+
+Evaluating:  52%|█████▏    | 16/31 [26:20<24:40, 98.73s/it][A[A
+
+Evaluating:  55%|█████▍    | 17/31 [27:59<23:01, 98.71s/it][A[A
+
+Evaluating:  58%|█████▊    | 18/31 [29:38<21:24, 98.84s/it][A[A
+
+Evaluating:  61%|██████▏   | 19/31 [31:17<19:46, 98.89s/it][A[A
+
+Evaluating:  65%|██████▍   | 20/31 [32:56<18:07, 98.82s/it][A[A
+
+Evaluating:  68%|██████▊   | 21/31 [34:35<16:28, 98.85s/it][A[A
+
+Evaluating:  71%|███████   | 22/31 [36:13<14:48, 98.77s/it][A[A
+
+Evaluating:  74%|███████▍  | 23/31 [37:52<13:09, 98.72s/it][A[A
+
+Evaluating:  77%|███████▋  | 24/31 [39:31<11:31, 98.72s/it][A[A
+
+Evaluating:  81%|████████  | 25/31 [41:09<09:52, 98.71s/it][A[A
+
+Evaluating:  84%|████████▍ | 26/31 [42:48<08:13, 98.74s/it][A[A
+
+Evaluating:  87%|████████▋ | 27/31 [44:27<06:35, 98.80s/it][A[A
+
+Evaluating:  90%|█████████ | 28/31 [46:06<04:56, 98.74s/it][A[A
+
+Evaluating:  94%|█████████▎| 29/31 [47:44<03:17, 98.74s/it][A[A
+
+Evaluating:  97%|█████████▋| 30/31 [49:23<01:38, 98.64s/it][A[A
+
+Evaluating: 100%|██████████| 31/31 [50:56<00:00, 96.93s/it][A[AEvaluating: 100%|██████████| 31/31 [50:56<00:00, 98.59s/it]
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+03/14/2022 17:34:12 - INFO - __main__ -   ***** Eval results  *****
+03/14/2022 17:34:12 - INFO - __main__ -     acc = 0.30707070707070705
+03/14/2022 17:34:12 - INFO - __main__ -     auc = 0.8645134732909029
+03/14/2022 17:34:12 - INFO - __main__ -     f1 = 0.2590048058701688
+03/14/2022 17:34:12 - INFO - __main__ -     mcc = 0.2893885297758352
+03/14/2022 17:34:12 - INFO - __main__ -     precision = 0.31936543765348235
+03/14/2022 17:34:12 - INFO - __main__ -     recall = 0.30707070707070705
+03/14/2022 17:34:12 - INFO - __main__ -     top10acc = 0.8595959595959596
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+03/14/2022 17:34:12 - INFO - transformers.configuration_utils -   Configuration saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-200/config.json
+03/14/2022 17:34:13 - INFO - transformers.modeling_utils -   Model weights saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-200/pytorch_model.bin
+03/14/2022 17:34:13 - INFO - __main__ -   Saving model checkpoint to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-200
+03/14/2022 17:34:15 - INFO - __main__ -   Saving optimizer and scheduler states to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-200
+
+Iteration:  86%|████████▌ | 200/232 [35:22:10<11:16:55, 1269.24s/it][A
+Iteration:  87%|████████▋ | 201/232 [35:27:27<8:28:13, 983.65s/it]  [A
+Iteration:  87%|████████▋ | 202/232 [35:32:54<6:33:16, 786.54s/it][A
+Iteration:  88%|████████▊ | 203/232 [35:38:20<5:13:26, 648.51s/it][A
+Iteration:  88%|████████▊ | 204/232 [35:43:46<4:17:25, 551.62s/it][A
+Iteration:  88%|████████▊ | 205/232 [35:49:13<3:37:54, 484.25s/it][A
+Iteration:  89%|████████▉ | 206/232 [35:54:40<3:09:27, 437.22s/it][A
+Iteration:  89%|████████▉ | 207/232 [36:00:07<2:48:19, 403.97s/it][A
+Iteration:  90%|████████▉ | 208/232 [36:05:34<2:32:25, 381.05s/it][A
+Iteration:  90%|█████████ | 209/232 [36:11:00<2:19:44, 364.55s/it][A03/14/2022 18:28:33 - INFO - __main__ -   Loading features from cached file /home/mexposit/cg/gea/transformers/6_gea30xl/in_data/cached_dev_6-new-12w-0_1024_dnagea30
+03/14/2022 18:28:34 - INFO - __main__ -   ***** Running evaluation  *****
+03/14/2022 18:28:34 - INFO - __main__ -     Num examples = 990
+03/14/2022 18:28:34 - INFO - __main__ -     Batch size = 32
+
+
+Evaluating:   0%|          | 0/31 [00:00<?, ?it/s][A[A
+
+Evaluating:   3%|▎         | 1/31 [01:39<49:44, 99.47s/it][A[A
+
+Evaluating:   6%|▋         | 2/31 [03:18<47:58, 99.24s/it][A[A
+
+Evaluating:  10%|▉         | 3/31 [04:57<46:18, 99.25s/it][A[A
+
+Evaluating:  13%|█▎        | 4/31 [06:37<44:40, 99.28s/it][A[A
+
+Evaluating:  16%|█▌        | 5/31 [08:16<43:00, 99.24s/it][A[A
+
+Evaluating:  19%|█▉        | 6/31 [09:55<41:18, 99.15s/it][A[A
+
+Evaluating:  23%|██▎       | 7/31 [11:34<39:42, 99.25s/it][A[A
+
+Evaluating:  26%|██▌       | 8/31 [13:13<38:02, 99.24s/it][A[A
+
+Evaluating:  29%|██▉       | 9/31 [14:52<36:20, 99.11s/it][A[A
+
+Evaluating:  32%|███▏      | 10/31 [16:31<34:41, 99.12s/it][A[A
+
+Evaluating:  35%|███▌      | 11/31 [18:10<33:01, 99.07s/it][A[A
+
+Evaluating:  39%|███▊      | 12/31 [19:50<31:23, 99.12s/it][A[A
+
+Evaluating:  42%|████▏     | 13/31 [21:29<29:45, 99.19s/it][A[A
+
+Evaluating:  45%|████▌     | 14/31 [23:08<28:06, 99.19s/it][A[A
+
+Evaluating:  48%|████▊     | 15/31 [24:47<26:26, 99.18s/it][A[A
+
+Evaluating:  52%|█████▏    | 16/31 [26:26<24:45, 99.04s/it][A[A
+
+Evaluating:  55%|█████▍    | 17/31 [28:05<23:07, 99.09s/it][A[A
+
+Evaluating:  58%|█████▊    | 18/31 [29:45<21:30, 99.23s/it][A[A
+
+Evaluating:  61%|██████▏   | 19/31 [31:24<19:51, 99.31s/it][A[A
+
+Evaluating:  65%|██████▍   | 20/31 [33:04<18:12, 99.32s/it][A[A
+
+Evaluating:  68%|██████▊   | 21/31 [34:43<16:33, 99.30s/it][A[A
+
+Evaluating:  71%|███████   | 22/31 [36:22<14:53, 99.28s/it][A[A
+
+Evaluating:  74%|███████▍  | 23/31 [38:01<13:13, 99.24s/it][A[A
+
+Evaluating:  77%|███████▋  | 24/31 [39:40<11:34, 99.17s/it][A[A
+
+Evaluating:  81%|████████  | 25/31 [41:19<09:54, 99.06s/it][A[A
+
+Evaluating:  84%|████████▍ | 26/31 [42:59<08:15, 99.18s/it][A[A
+
+Evaluating:  87%|████████▋ | 27/31 [44:38<06:36, 99.20s/it][A[A
+
+Evaluating:  90%|█████████ | 28/31 [46:17<04:57, 99.14s/it][A[A
+
+Evaluating:  94%|█████████▎| 29/31 [47:56<03:18, 99.14s/it][A[A
+
+Evaluating:  97%|█████████▋| 30/31 [49:35<01:39, 99.13s/it][A[A
+
+Evaluating: 100%|██████████| 31/31 [51:08<00:00, 97.36s/it][A[AEvaluating: 100%|██████████| 31/31 [51:08<00:00, 98.99s/it]
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+03/14/2022 19:19:43 - INFO - __main__ -   ***** Eval results  *****
+03/14/2022 19:19:43 - INFO - __main__ -     acc = 0.302020202020202
+03/14/2022 19:19:43 - INFO - __main__ -     auc = 0.8728518201872435
+03/14/2022 19:19:43 - INFO - __main__ -     f1 = 0.2329618834180555
+03/14/2022 19:19:43 - INFO - __main__ -     mcc = 0.2856335924351801
+03/14/2022 19:19:43 - INFO - __main__ -     precision = 0.3407849619588667
+03/14/2022 19:19:43 - INFO - __main__ -     recall = 0.3020202020202021
+03/14/2022 19:19:43 - INFO - __main__ -     top10acc = 0.8323232323232324
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+03/14/2022 19:19:43 - INFO - transformers.configuration_utils -   Configuration saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-210/config.json
+03/14/2022 19:19:44 - INFO - transformers.modeling_utils -   Model weights saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-210/pytorch_model.bin
+03/14/2022 19:19:44 - INFO - __main__ -   Saving model checkpoint to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-210
+03/14/2022 19:19:46 - INFO - __main__ -   Saving optimizer and scheduler states to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-210
+
+Iteration:  91%|█████████ | 210/232 [37:07:41<7:47:40, 1275.46s/it][A
+Iteration:  91%|█████████ | 211/232 [37:13:00<5:45:57, 988.47s/it] [A
+Iteration:  91%|█████████▏| 212/232 [37:18:27<4:23:19, 789.98s/it][A
+Iteration:  92%|█████████▏| 213/232 [37:23:54<3:26:11, 651.13s/it][A
+Iteration:  92%|█████████▏| 214/232 [37:29:22<2:46:15, 554.19s/it][A
+Iteration:  93%|█████████▎| 215/232 [37:34:52<2:17:55, 486.79s/it][A
+Iteration:  93%|█████████▎| 216/232 [37:40:19<1:57:04, 439.03s/it][A
+Iteration:  94%|█████████▎| 217/232 [37:45:49<1:41:32, 406.16s/it][A
+Iteration:  94%|█████████▍| 218/232 [37:51:16<1:29:14, 382.47s/it][A
+Iteration:  94%|█████████▍| 219/232 [37:56:43<1:19:15, 365.84s/it][A03/14/2022 20:14:16 - INFO - __main__ -   Loading features from cached file /home/mexposit/cg/gea/transformers/6_gea30xl/in_data/cached_dev_6-new-12w-0_1024_dnagea30
+03/14/2022 20:14:16 - INFO - __main__ -   ***** Running evaluation  *****
+03/14/2022 20:14:16 - INFO - __main__ -     Num examples = 990
+03/14/2022 20:14:16 - INFO - __main__ -     Batch size = 32
+
+
+Evaluating:   0%|          | 0/31 [00:00<?, ?it/s][A[A
+
+Evaluating:   3%|▎         | 1/31 [01:38<49:26, 98.88s/it][A[A
+
+Evaluating:   6%|▋         | 2/31 [03:17<47:43, 98.72s/it][A[A
+
+Evaluating:  10%|▉         | 3/31 [04:56<46:04, 98.72s/it][A[A
+
+Evaluating:  13%|█▎        | 4/31 [06:34<44:25, 98.71s/it][A[A
+
+Evaluating:  16%|█▌        | 5/31 [08:13<42:45, 98.67s/it][A[A
+
+Evaluating:  19%|█▉        | 6/31 [09:52<41:06, 98.64s/it][A[A
+
+Evaluating:  23%|██▎       | 7/31 [11:30<39:28, 98.69s/it][A[A
+
+Evaluating:  26%|██▌       | 8/31 [13:09<37:48, 98.64s/it][A[A
+
+Evaluating:  29%|██▉       | 9/31 [14:47<36:07, 98.52s/it][A[A
+
+Evaluating:  32%|███▏      | 10/31 [16:26<34:29, 98.56s/it][A[A
+
+Evaluating:  35%|███▌      | 11/31 [18:04<32:51, 98.59s/it][A[A
+
+Evaluating:  39%|███▊      | 12/31 [19:43<31:14, 98.67s/it][A[A
+
+Evaluating:  42%|████▏     | 13/31 [21:22<29:37, 98.72s/it][A[A
+
+Evaluating:  45%|████▌     | 14/31 [23:01<27:58, 98.76s/it][A[A
+
+Evaluating:  48%|████▊     | 15/31 [24:40<26:19, 98.71s/it][A[A
+
+Evaluating:  52%|█████▏    | 16/31 [26:18<24:38, 98.58s/it][A[A
+
+Evaluating:  55%|█████▍    | 17/31 [27:57<23:01, 98.67s/it][A[A
+
+Evaluating:  58%|█████▊    | 18/31 [29:36<21:24, 98.77s/it][A[A
+
+Evaluating:  61%|██████▏   | 19/31 [31:15<19:45, 98.77s/it][A[A
+
+Evaluating:  65%|██████▍   | 20/31 [32:53<18:06, 98.74s/it][A[A
+
+Evaluating:  68%|██████▊   | 21/31 [34:32<16:27, 98.78s/it][A[A
+
+Evaluating:  71%|███████   | 22/31 [36:11<14:48, 98.73s/it][A[A
+
+Evaluating:  74%|███████▍  | 23/31 [37:49<13:09, 98.72s/it][A[A
+
+Evaluating:  77%|███████▋  | 24/31 [39:28<11:30, 98.65s/it][A[A
+
+Evaluating:  81%|████████  | 25/31 [41:06<09:51, 98.60s/it][A[A
+
+Evaluating:  84%|████████▍ | 26/31 [42:45<08:13, 98.62s/it][A[A
+
+Evaluating:  87%|████████▋ | 27/31 [44:24<06:34, 98.67s/it][A[A
+
+Evaluating:  90%|█████████ | 28/31 [46:02<04:56, 98.67s/it][A[A
+
+Evaluating:  94%|█████████▎| 29/31 [47:41<03:17, 98.66s/it][A[A
+
+Evaluating:  97%|█████████▋| 30/31 [49:20<01:38, 98.60s/it][A[A
+
+Evaluating: 100%|██████████| 31/31 [50:52<00:00, 96.84s/it][A[AEvaluating: 100%|██████████| 31/31 [50:52<00:00, 98.48s/it]
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+03/14/2022 21:05:09 - INFO - __main__ -   ***** Eval results  *****
+03/14/2022 21:05:09 - INFO - __main__ -     acc = 0.36262626262626263
+03/14/2022 21:05:09 - INFO - __main__ -     auc = 0.880530487740519
+03/14/2022 21:05:09 - INFO - __main__ -     f1 = 0.32122856026562857
+03/14/2022 21:05:09 - INFO - __main__ -     mcc = 0.3470947448246096
+03/14/2022 21:05:09 - INFO - __main__ -     precision = 0.33831683510568344
+03/14/2022 21:05:09 - INFO - __main__ -     recall = 0.36262626262626263
+03/14/2022 21:05:09 - INFO - __main__ -     top10acc = 0.8606060606060606
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+03/14/2022 21:05:09 - INFO - transformers.configuration_utils -   Configuration saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-220/config.json
+03/14/2022 21:05:10 - INFO - transformers.modeling_utils -   Model weights saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-220/pytorch_model.bin
+03/14/2022 21:05:10 - INFO - __main__ -   Saving model checkpoint to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-220
+03/14/2022 21:05:12 - INFO - __main__ -   Saving optimizer and scheduler states to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-220
+
+Iteration:  95%|█████████▍| 220/232 [38:53:07<4:14:16, 1271.40s/it][A
+Iteration:  95%|█████████▌| 221/232 [38:58:33<3:01:05, 987.74s/it] [A
+Iteration:  96%|█████████▌| 222/232 [39:04:00<2:11:34, 789.41s/it][A
+Iteration:  96%|█████████▌| 223/232 [39:09:28<1:37:38, 650.98s/it][A
+Iteration:  97%|█████████▋| 224/232 [39:14:54<1:13:49, 553.66s/it][A
+Iteration:  97%|█████████▋| 225/232 [39:20:21<56:38, 485.54s/it]  [A
+Iteration:  97%|█████████▋| 226/232 [39:25:48<43:47, 437.93s/it][A
+Iteration:  98%|█████████▊| 227/232 [39:31:16<33:45, 405.17s/it][A
+Iteration:  98%|█████████▊| 228/232 [39:36:45<25:28, 382.07s/it][A
+Iteration:  99%|█████████▊| 229/232 [39:42:12<18:16, 365.56s/it][A03/14/2022 21:59:46 - INFO - __main__ -   Loading features from cached file /home/mexposit/cg/gea/transformers/6_gea30xl/in_data/cached_dev_6-new-12w-0_1024_dnagea30
+03/14/2022 21:59:47 - INFO - __main__ -   ***** Running evaluation  *****
+03/14/2022 21:59:47 - INFO - __main__ -     Num examples = 990
+03/14/2022 21:59:47 - INFO - __main__ -     Batch size = 32
+
+
+Evaluating:   0%|          | 0/31 [00:00<?, ?it/s][A[A
+
+Evaluating:   3%|▎         | 1/31 [01:38<49:25, 98.84s/it][A[A
+
+Evaluating:   6%|▋         | 2/31 [03:16<47:30, 98.28s/it][A[A
+
+Evaluating:  10%|▉         | 3/31 [04:55<45:54, 98.38s/it][A[A
+
+Evaluating:  13%|█▎        | 4/31 [06:33<44:13, 98.27s/it][A[A
+
+Evaluating:  16%|█▌        | 5/31 [08:11<42:32, 98.18s/it][A[A
+
+Evaluating:  19%|█▉        | 6/31 [09:49<40:51, 98.08s/it][A[A
+
+Evaluating:  23%|██▎       | 7/31 [11:26<39:09, 97.91s/it][A[A
+
+Evaluating:  26%|██▌       | 8/31 [13:03<37:21, 97.47s/it][A[A
+
+Evaluating:  29%|██▉       | 9/31 [14:39<35:33, 96.97s/it][A[A
+
+Evaluating:  32%|███▏      | 10/31 [16:15<33:53, 96.84s/it][A[A
+
+Evaluating:  35%|███▌      | 11/31 [17:52<32:15, 96.78s/it][A[A
+
+Evaluating:  39%|███▊      | 12/31 [19:29<30:42, 97.00s/it][A[A
+
+Evaluating:  42%|████▏     | 13/31 [21:06<29:04, 96.92s/it][A[A
+
+Evaluating:  45%|████▌     | 14/31 [22:43<27:28, 97.00s/it][A[A
+
+Evaluating:  48%|████▊     | 15/31 [24:20<25:49, 96.85s/it][A[A
+
+Evaluating:  52%|█████▏    | 16/31 [25:56<24:09, 96.63s/it][A[A
+
+Evaluating:  55%|█████▍    | 17/31 [27:33<22:34, 96.75s/it][A[A
+
+Evaluating:  58%|█████▊    | 18/31 [29:10<20:58, 96.78s/it][A[A
+
+Evaluating:  61%|██████▏   | 19/31 [30:46<19:20, 96.71s/it][A[A
+
+Evaluating:  65%|██████▍   | 20/31 [32:23<17:42, 96.62s/it][A[A
+
+Evaluating:  68%|██████▊   | 21/31 [33:59<16:06, 96.61s/it][A[A
+
+Evaluating:  71%|███████   | 22/31 [35:36<14:29, 96.58s/it][A[A
+
+Evaluating:  74%|███████▍  | 23/31 [37:12<12:52, 96.56s/it][A[A
+
+Evaluating:  77%|███████▋  | 24/31 [38:49<11:15, 96.48s/it][A[A
+
+Evaluating:  81%|████████  | 25/31 [40:25<09:38, 96.43s/it][A[A
+
+Evaluating:  84%|████████▍ | 26/31 [42:01<08:02, 96.44s/it][A[A
+
+Evaluating:  87%|████████▋ | 27/31 [43:38<06:26, 96.50s/it][A[A
+
+Evaluating:  90%|█████████ | 28/31 [45:14<04:49, 96.44s/it][A[A
+
+Evaluating:  94%|█████████▎| 29/31 [46:51<03:12, 96.41s/it][A[A
+
+Evaluating:  97%|█████████▋| 30/31 [48:27<01:36, 96.35s/it][A[A
+
+Evaluating: 100%|██████████| 31/31 [49:59<00:00, 95.12s/it][A[AEvaluating: 100%|██████████| 31/31 [49:59<00:00, 96.76s/it]
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+03/14/2022 22:49:47 - INFO - __main__ -   ***** Eval results  *****
+03/14/2022 22:49:47 - INFO - __main__ -     acc = 0.36464646464646466
+03/14/2022 22:49:47 - INFO - __main__ -     auc = 0.8900351477153985
+03/14/2022 22:49:47 - INFO - __main__ -     f1 = 0.3006639341324498
+03/14/2022 22:49:47 - INFO - __main__ -     mcc = 0.3516036903553808
+03/14/2022 22:49:47 - INFO - __main__ -     precision = 0.35006067326416146
+03/14/2022 22:49:47 - INFO - __main__ -     recall = 0.36464646464646466
+03/14/2022 22:49:47 - INFO - __main__ -     top10acc = 0.8666666666666667
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+03/14/2022 22:49:47 - INFO - transformers.configuration_utils -   Configuration saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-230/config.json
+03/14/2022 22:49:48 - INFO - transformers.modeling_utils -   Model weights saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-230/pytorch_model.bin
+03/14/2022 22:49:48 - INFO - __main__ -   Saving model checkpoint to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-230
+03/14/2022 22:49:50 - INFO - __main__ -   Saving optimizer and scheduler states to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-230
+
+Iteration:  99%|█████████▉| 230/232 [40:37:45<41:51, 1255.93s/it][A
+Iteration: 100%|█████████▉| 231/232 [40:43:00<16:13, 973.47s/it] [A
+Iteration: 100%|██████████| 232/232 [40:45:27<00:00, 725.55s/it][AIteration: 100%|██████████| 232/232 [40:45:27<00:00, 632.44s/it]
+Epoch:  20%|██        | 1/5 [40:45:27<163:01:48, 146727.07s/it]
+Iteration:   0%|          | 0/232 [00:00<?, ?it/s][A
+Iteration:   0%|          | 1/232 [05:21<20:37:00, 321.30s/it][A
+Iteration:   1%|          | 2/232 [10:48<20:45:20, 324.87s/it][A
+Iteration:   1%|▏         | 3/232 [16:17<20:46:59, 326.72s/it][A
+Iteration:   2%|▏         | 4/232 [21:47<20:45:44, 327.83s/it][A
+Iteration:   2%|▏         | 5/232 [27:13<20:37:58, 327.22s/it][A
+Iteration:   3%|▎         | 6/232 [32:40<20:32:39, 327.25s/it][A
+Iteration:   3%|▎         | 7/232 [38:07<20:26:59, 327.20s/it][A03/14/2022 23:41:08 - INFO - __main__ -   Loading features from cached file /home/mexposit/cg/gea/transformers/6_gea30xl/in_data/cached_dev_6-new-12w-0_1024_dnagea30
+03/14/2022 23:41:09 - INFO - __main__ -   ***** Running evaluation  *****
+03/14/2022 23:41:09 - INFO - __main__ -     Num examples = 990
+03/14/2022 23:41:09 - INFO - __main__ -     Batch size = 32
+
+
+Evaluating:   0%|          | 0/31 [00:00<?, ?it/s][A[A
+
+Evaluating:   3%|▎         | 1/31 [01:39<49:58, 99.95s/it][A[A
+
+Evaluating:   6%|▋         | 2/31 [03:19<48:09, 99.65s/it][A[A
+
+Evaluating:  10%|▉         | 3/31 [04:59<46:31, 99.70s/it][A[A
+
+Evaluating:  13%|█▎        | 4/31 [06:38<44:51, 99.67s/it][A[A
+
+Evaluating:  16%|█▌        | 5/31 [08:18<43:11, 99.69s/it][A[A
+
+Evaluating:  19%|█▉        | 6/31 [09:57<41:30, 99.60s/it][A[A
+
+Evaluating:  23%|██▎       | 7/31 [11:35<39:37, 99.06s/it][A[A
+
+Evaluating:  26%|██▌       | 8/31 [13:13<37:44, 98.45s/it][A[A
+
+Evaluating:  29%|██▉       | 9/31 [14:49<35:54, 97.95s/it][A[A
+
+Evaluating:  32%|███▏      | 10/31 [16:30<34:34, 98.79s/it][A[A
+
+Evaluating:  35%|███▌      | 11/31 [18:09<32:57, 98.86s/it][A[A
+
+Evaluating:  39%|███▊      | 12/31 [19:52<31:41, 100.07s/it][A[A
+
+Evaluating:  42%|████▏     | 13/31 [21:35<30:16, 100.93s/it][A[A
+
+Evaluating:  45%|████▌     | 14/31 [23:17<28:44, 101.45s/it][A[A
+
+Evaluating:  48%|████▊     | 15/31 [25:00<27:09, 101.84s/it][A[A
+
+Evaluating:  52%|█████▏    | 16/31 [26:42<25:29, 101.96s/it][A[A
+
+Evaluating:  55%|█████▍    | 17/31 [28:24<23:44, 101.78s/it][A[A
+
+Evaluating:  58%|█████▊    | 18/31 [30:01<21:46, 100.54s/it][A[A
+
+Evaluating:  61%|██████▏   | 19/31 [31:41<20:01, 100.13s/it][A[A
+
+Evaluating:  65%|██████▍   | 20/31 [33:18<18:12, 99.34s/it] [A[A
+
+Evaluating:  68%|██████▊   | 21/31 [35:00<16:41, 100.13s/it][A[A
+
+Evaluating:  71%|███████   | 22/31 [36:43<15:08, 100.89s/it][A[A
+
+Evaluating:  74%|███████▍  | 23/31 [38:25<13:31, 101.40s/it][A[A
+
+Evaluating:  77%|███████▋  | 24/31 [40:08<11:51, 101.70s/it][A[A
+
+Evaluating:  81%|████████  | 25/31 [41:50<10:11, 101.95s/it][A[A
+
+Evaluating:  84%|████████▍ | 26/31 [43:33<08:30, 102.16s/it][A[A
+
+Evaluating:  87%|████████▋ | 27/31 [45:14<06:47, 101.91s/it][A[A
+
+Evaluating:  90%|█████████ | 28/31 [46:52<05:01, 100.60s/it][A[A
+
+Evaluating:  94%|█████████▎| 29/31 [48:29<03:19, 99.64s/it] [A[A
+
+Evaluating:  97%|█████████▋| 30/31 [50:06<01:38, 98.86s/it][A[A
+
+Evaluating: 100%|██████████| 31/31 [51:38<00:00, 96.67s/it][A[AEvaluating: 100%|██████████| 31/31 [51:38<00:00, 99.94s/it]
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+03/15/2022 00:32:48 - INFO - __main__ -   ***** Eval results  *****
+03/15/2022 00:32:48 - INFO - __main__ -     acc = 0.34949494949494947
+03/15/2022 00:32:48 - INFO - __main__ -     auc = 0.8797103743812208
+03/15/2022 00:32:48 - INFO - __main__ -     f1 = 0.2846946432037628
+03/15/2022 00:32:48 - INFO - __main__ -     mcc = 0.3327536372420217
+03/15/2022 00:32:48 - INFO - __main__ -     precision = 0.2726065613038762
+03/15/2022 00:32:48 - INFO - __main__ -     recall = 0.34949494949494947
+03/15/2022 00:32:48 - INFO - __main__ -     top10acc = 0.8363636363636363
+/home/mexposit/miniconda3/envs/dnabert/lib/python3.6/site-packages/torch/optim/lr_scheduler.py:247: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+03/15/2022 00:32:48 - INFO - transformers.configuration_utils -   Configuration saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-240/config.json
+03/15/2022 00:32:49 - INFO - transformers.modeling_utils -   Model weights saved in /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-240/pytorch_model.bin
+03/15/2022 00:32:49 - INFO - __main__ -   Saving model checkpoint to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-240
+03/15/2022 00:32:51 - INFO - __main__ -   Saving optimizer and scheduler states to /home/mexposit/cg/gea/transformers/6_gea30xl/model/ft_6_gea30xl/checkpoint-240
+
+Iteration:   3%|▎         | 8/232 [1:35:19<81:51:01, 1315.45s/it][A
+Iteration:   4%|▍         | 9/232 [1:40:30<62:02:05, 1001.46s/it][A
+Iteration:   4%|▍         | 10/232 [1:45:54<48:52:00, 792.44s/it][Aslurmstepd: error: *** JOB 23904682 ON gpu15 CANCELLED AT 2022-03-15T00:47:36 ***

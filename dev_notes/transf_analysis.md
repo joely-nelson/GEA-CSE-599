@@ -1,5 +1,5 @@
 
-## Results from the first day
+## Results
 
 Their pretrained model trains really fast and gets up to high accuracy easily (of course, it is using their data).
 
@@ -28,17 +28,6 @@ Calculating steps: number of sequences in training data / 32 (batch size) * 5 (n
 BUT if you log every 10 steps, every 10 steps you get predictions for the whole EVALUATION datset, which is 1,000 (samples) / 32 (batch size) = 32 * 6sec/it = 3mins just for evaluation!! So it spends waaaay more time evaluating than training it. This was not a problem for the first approach as it was super fast to train but definietly not allowed me to fully train the second. 
 
 Using checkpoints reasonably is a must, specially if not calculating exactly the amount of training required.
-
-
-
-## TODO
-
-Look into weighted averaged sampling of the samples as a way to balance them
-
-DNAbert works for sequences up to 512 nucleotides out of the box, so no longer restricted to it.
-
-There seem to be some flags to get even longer sequences ready to work.
-
 
 
 An alternative approach:
